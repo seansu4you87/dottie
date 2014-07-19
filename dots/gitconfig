@@ -1,0 +1,65 @@
+[user]
+	name = Sean Yu
+	email = seansu4you87@gmail.com
+[push]
+	config = default
+	default = current
+[diff]
+	renames = true
+[status]
+	showUntrackedFiles = all
+[branch]
+	autosetupmerge = true
+[merge]
+	summary = true
+	conflictstyle = diff3
+[rebase]
+	autosquash = true
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+[core]
+	excludesfile = ~/.gitignore
+[init]
+	templatedir = ~/.git_template
+[alias]
+	a = add
+	add-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; git add `f`"
+	au = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; git add `f`"
+	b = branch
+	c = commit -m
+	ch = diff --name-status -r
+	changed = diff --name-status -r
+	ci = commit
+	cleanup-branches = !sh -c 'git branch --merged | grep -v ^* | xargs -n 1 git branch -d'
+	co = checkout
+	cosu = !sh -c 'git checkout $0 && git submodule update --init'
+	cp = cherry-pick
+	ctags = !.git/hooks/ctags
+	di = diff
+	dic = diff --cached
+	hist = log --pretty=format:\"%C(yellow)%h %ad%Creset | %s%C(bold red)%d%Creset [%C(bold blue)%an%Creset]\" --graph --date=short
+	ignored = "!git ls-files --others --exclude-standard"
+	integrate = merge --no-ff
+	lastauthor = log -1 --format='%Cgreen%an <%ae>'
+	lg = log --all --graph --abbrev-commit --date=relative --pretty=format:'%C(bold blue)%h - %C(reset)%C(green)(%ar)%C(reset) - %s %C(dim)- %an%C(reset)%C(yellow)%d'
+	lgb = log --graph --abbrev-commit --date=relative --pretty=format:'%C(bold blue)%h - %C(reset)%C(green)(%ar)%C(reset) - %s %C(dim)- %an%C(reset)%C(yellow)%d'
+	out = log origin..HEAD
+	pl = pull
+	plre = pull --rebase
+	ps = push
+	publish = push -u
+	reauthor = commit --amend --reset-author -C HEAD
+	st = status
+	td = merge --no-ff
+	touchdown = merge --no-ff
+	track = !sh -c 'git branch --track "$0" "origin/$0" && git checkout "$0"'
+	tree = log --graph --decorate --pretty=oneline --abbrev-commit
+	whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
+        who = shortlog -sn
+[rerere]
+	enabled = 1
+[include]
+	path = ~/.gitconfig_local

@@ -1,0 +1,38 @@
+if [ -z "$YU_HOME" ]; then
+  echo "YU_HOME environment variable isn't defined! Please set it!"
+  return
+fi
+
+# Add your bin folder to the path, if you have it.  It's a good place to add all your scripts
+if [[ -d "$HOME/bin" ]]; then
+  export PATH="$HOME/bin:$PATH"
+fi
+
+if [[ -d "/usr/local/sbin" ]]; then
+  export PATH="$PATH:/usr/local/sbin"
+fi
+
+# Add the git-extras to your path if you have it
+if [[ -d "$YU_HOME/git-extras" ]]; then
+  export PATH="$YU_HOME/git-extras:$PATH"
+fi
+
+if [[ -d $HOME/.bash_completion.d ]]; then
+  for i in $(LC_ALL=C command ls "$HOME/.bash_completion.d"); do
+    source "$HOME/.bash_completion.d/$i"
+  done
+fi
+unset i
+
+# Source aliases
+[[ -f "$YU_HOME/github.com/seansu4you87/dotfiles/bash/aliases" ]] && source "$YU_HOME/github.com/seansu4you87/dotfiles/bash/aliases"
+
+# Source bashrc
+[[ -f "$HOME/.bashrc" ]] && source "$HOME/.bashrc"
+
+# In case the user does not have git completion
+# function __git_ps1() {
+#   echo ''
+# }
+
+# vim: filetype=sh

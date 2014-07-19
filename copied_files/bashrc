@@ -1,0 +1,14 @@
+########################################################
+# bootstrap Square bashrc; please don't change this bit.
+########################################################
+if [[ -f "$YU_HOME/github.com/seansu4you87/dotfiles/bash/bashrc" ]]; then
+  source $YU_HOME/github.com/seansu4you87/dotfiles/bash/bashrc
+fi
+########################################################
+
+
+###########################################
+# Feel free to make your own changes below.
+###########################################
+
+# vim: filetype=sh

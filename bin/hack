@@ -1,0 +1,228 @@
+#!/bin/bash
+
+set -e
+
+gitdir=$(git rev-parse --git-dir)
+rootdir=$(dirname "$gitdir")
+CURRENT=$(git symbolic-ref -q HEAD || git rev-parse HEAD)
+CURRENT=${CURRENT#refs/heads/}
+
+logfile=/tmp/hack-$$.log
+
+if [ "$rootdir" = "." ]; then
+  rootdir=$PWD
+fi
+project=$(basename "$rootdir")
+
+# default settings
+verbose=true
+branch=$CURRENT
+
+printUsage() {
+  echo "usage: $0 [options] [BRANCH]"
+  echo
+  echo "  -h  --help                  Show this message"
+  echo "  -v  --verbose               Show all commands before running them (default: on)"
+  echo "  -q  --quiet                 Don't display commands before running them (default: off)"
+  echo
+  echo "  If BRANCH is given then that branch will be updated and switched to instead of the"
+  echo "  current branch."
+  echo
+}
+
+for arg in "$@"; do
+  case $arg
+  in
+    -v | --verbose)
+      verbose=true
+      ;;
+    -q | --quiet)
+      verbose=false
+      ;;
+    -h | --help)
+      printUsage
+      exit
+      ;;
+    -*)
+      echo "$0: unrecognized parameter '$arg'"
+      printUsage
+      exit 1
+      ;;
+    *)
+      branch=$arg
+      ;;
+  esac
+done
+
+# colors
+RED="\033[0;31m"
+YELLOW="\033[1;33m"
+GREEN="\033[0;32m"
+NO_COLOR="\033[0m"
+
+die() {
+  echo -e "${RED}${@}${NO_COLOR}"
+  exit 1
+}
+
+warn() {
+  echo -e "${YELLOW}${@}${NO_COLOR}"
+}
+
+good() {
+  echo -e "${GREEN}${@}${NO_COLOR}"
+}
+
+# git stuff
+GIT=$(which git)
+
+git() {
+  if [ "$verbose" = true ]; then
+    echo -e "+ ${GREEN}git $@${NO_COLOR}"
+  fi
+
+  eval "$GIT $@ | tee $logfile"
+}
+
+trap 'cleanup' EXIT
+
+no_changes () {
+  $GIT diff --no-ext-diff --quiet --exit-code
+}
+
+stash_changes_if_needed() {
+  if [ -z "$stashed" ]; then # don't do anything if we've already stashed-if-needed
+    if no_changes; then
+      stashed=false
+    else
+      git stash ||
+        die "Could not stash your local changes. Something must be really wrong."
+
+      if cat $logfile | grep "No local changes to save" >/dev/null; then
+        # nothing to stash, no_changes lied to us
+        stashed=false
+      else
+        stashed=true
+      fi
+    fi
+  fi
+}
+
+pop_stash_if_needed() {
+  if [ "$stashed" = true ]; then
+    git stash pop ||
+      die "Could not pop your stashed changes over the updates."
+    stashed=false
+  fi
+}
+
+cleanup() {
+  if [ "$stashed" = true ]; then
+    warn "Your stashed changes were not applied because an error occurred. Don't panic. They are not lost. Look for them in \"git stash list\"."
+  fi
+  rm -f $logfile
+}
+
+switch_to_tracking() {
+  if [[ -z "$TRACK" && "$CURRENT" != "$TRACK_BRANCH" ]]; then
+    switch_to_branch $TRACK_BRANCH
+  fi
+}
+
+switch_to_branch() {
+  local current
+  current=$($GIT symbolic-ref -q HEAD || $GIT rev-parse HEAD)
+  current=${current#refs/heads/}
+
+  if [[ $current != $1 ]]; then
+    git checkout $1 ||
+      die "Could not switch to $1."
+  fi
+}
+
+are_same_ref() {
+  lhs=`$GIT rev-parse $1`
+  rhs=`$GIT rev-parse $2`
+
+  if [[ $lhs == $rhs ]]; then
+    return 0
+  else
+    return 1
+  fi
+}
+
+different_refs() {
+  if are_same_ref $1 $2; then
+    return 1
+  else
+    return 0
+  fi
+}
+
+# initial state
+stashed=""
+noop=true
+
+REMOTE=$($GIT config branch.$branch.remote || true)
+
+if [ -z "$REMOTE" ]; then
+  REMOTE=origin
+fi
+
+TRACK=$($GIT config branch.$branch.merge || true)
+
+if [ -z "$TRACK" ]; then
+  # if we're not explicitly tracking something, rebase against master
+  TRACK_BRANCH=master
+else
+  TRACK_BRANCH=${TRACK#refs/heads/}
+fi
+
+if [ -d "$gitdir/svn" ]; then
+  TYPE="git-svn"
+else
+  TYPE="git"
+fi
+
+if [ "$TYPE" = "git-svn" ]; then
+  noop=false
+
+  switch_to_tracking
+  stash_changes_if_needed
+
+  git svn rebase ||
+    die "Could not complete the rebase from the upstream Subversion server."
+else
+  git fetch $REMOTE ||
+    die "Could not fetch updates from $REMOTE. Check your network connection."
+
+  mergebase=$($GIT merge-base $branch $REMOTE/$TRACK_BRANCH)
+  if different_refs $mergebase $REMOTE/$TRACK_BRANCH; then
+    stash_changes_if_needed
+    switch_to_tracking
+
+    if different_refs HEAD $REMOTE/$TRACK_BRANCH; then
+      noop=false
+      git rebase $REMOTE/$TRACK_BRANCH ||
+        die "Could not rebase against $REMOTE/$TRACK_BRANCH. You may need to resolve conflicts."
+    fi
+  fi
+fi
+
+if [[ -z "$TRACK" && "$branch" != "$TRACK_BRANCH" ]]; then
+  noop=false
+
+  switch_to_branch $branch
+  stash_changes_if_needed
+
+  git rebase $TRACK_BRANCH ||
+    die "Could not rebase against $TRACK_BRANCH. You may need to resolve conflicts."
+fi
+
+pop_stash_if_needed
+
+if [ "$noop" = false ]; then
+  good "Successfully updated $project."
+else
+  good "$project already up to date."
+fi
