@@ -1,0 +1,40 @@
+{
+	"default_module": "powerline.segments.common",
+	"segment_data": {
+		"uptime": {
+			"before": "⇑  "
+		},
+		"date": {
+			"before": "⌚ "
+		}
+	},
+	"segments": {
+		"right": [
+			{
+				"name": "weather",
+				"priority": 50,
+				"args": {
+					"unit": "f",
+					"location_query": "san francisco, ca"
+				}
+			},
+			{
+				"name": "battery",
+				"priority": 50
+			},
+			{
+				"name": "date"
+			},
+			{
+				"name": "date",
+				"args": {
+					"format": "%H:%M",
+					"istime": true
+				}
+			},
+			{
+				"name": "hostname"
+			}
+		]
+	}
+}
