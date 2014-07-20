@@ -1,0 +1,7 @@
+Bundle 'bling/vim-airline'
+Bundle 'Blackrush/vim-gocode'
+Bundle 'wting/rust.vim'
+
+" Commented out cause Ember handlebars still give fucked up syntax
+" highlighting
+" Bundle 'mustache/vim-mustache-handlebars'

@@ -1,0 +1,27 @@
+set hlsearch
+color solarized
+
+" remap escape to double j
+inoremap jj <ESC>
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+" let g:airline_left_sep = '▶'
+" let g:airline_right_sep = '◀'
+
+" removing the CtrlP mapping for now, while I get used to C-P
+nunmap <leader>t
+
+" Golang setup
+" Some Linux distributions set filetype in /etc/vimrc.
+" Clear filetype flags before changing runtimepath to force Vim to reload them.
+"
+filetype off
+filetype plugin indent off
+set runtimepath+=/usr/local/go/misc/vim
+filetype plugin indent on
+syntax on
+au BufNewFile,BufRead *.go setlocal noet ts=4 sw=4 sts=4
+"
+" Autorun go fmt
+" autocmd FileType go autocmd BufWritePre <buffer> Fmt
