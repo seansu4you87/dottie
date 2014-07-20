@@ -61,7 +61,7 @@ POWERLINE_PATH="$HOME/Library/Python/2.7/lib/python/site-packages/powerline"
 export POWERLINE_PATH
 
 link_files_from_dir "dots" "."
-copy_files_from_dir "copied_files" "."
+copy_files_from_dir "copied_dots" "."
 link_files_from_dir "bin" "bin/"
 
 echo "All done!"
