@@ -1,6 +1,9 @@
 # Path
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH"
 
+# Editor
+export EDITOR='vim'
+
 # Colors ----------------------------------------------------------
 export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;32'
