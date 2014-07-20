@@ -22,8 +22,6 @@
 	interactive = auto
 [core]
 	excludesfile = ~/.gitignore
-[init]
-	templatedir = ~/.git_template
 [alias]
 	a = add
 	add-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; git add `f`"

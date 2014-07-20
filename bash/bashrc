@@ -32,6 +32,9 @@ export COLOR_YELLOW='\e[0;33m'
 export COLOR_GRAY='\e[1;30m'
 export COLOR_LIGHT_GRAY='\e[0;37m'
 
+# Less
+export LESS='-RFX'
+
 # Aliases?
 [[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
 [[ -f "$HOME/.localaliases" ]] && source "$HOME/.localaliases"
