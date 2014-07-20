@@ -3,6 +3,16 @@ if [ -z "$YU_HOME" ]; then
   return
 fi
 
+if [ -z "$GITHUB_HOME" ]; then
+  echo "GITHUB_HOME environment variable isn't defined! Please set it!"
+  return
+fi
+
+if [ -z "$DOTFILES_HOME" ]; then
+  echo "DOTFILES_HOME environment variable isn't defined! Please set it!"
+  return
+fi
+
 # Add your bin folder to the path, if you have it.  It's a good place to add all your scripts
 if [[ -d "$HOME/bin" ]]; then
   export PATH="$HOME/bin:$PATH"
@@ -21,7 +31,7 @@ fi
 unset i
 
 # Source aliases
-[[ -f "$YU_HOME/github.com/seansu4you87/dotfiles/bash/aliases" ]] && source "$YU_HOME/github.com/seansu4you87/dotfiles/bash/aliases"
+[[ -f "$DOTFILES_HOME/bash/aliases" ]] && source "$DOTFILES_HOME/bash/aliases"
 
 # Source bashrc
 [[ -f "$HOME/.bashrc" ]] && source "$HOME/.bashrc"

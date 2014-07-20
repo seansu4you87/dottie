@@ -19,13 +19,13 @@ export COLOR_LIGHT_BLUE='\e[1;34m'
 export COLOR_GREEN='\e[0;32m'
 export COLOR_LIGHT_GREEN='\e[1;32m'
 export COLOR_CYAN='\e[0;36m'
-export COLOR_LIGHT_CYAN='\e[1;36m'
+# export COLOR_LIGHT_CYAN='\e[1;36m' # doesn't work on solarized
 export COLOR_RED='\e[0;31m'
 export COLOR_LIGHT_RED='\e[1;31m'
 export COLOR_PURPLE='\e[0;35m'
 export COLOR_LIGHT_PURPLE='\e[1;35m'
 export COLOR_BROWN='\e[0;33m'
-export COLOR_YELLOW='\e[1;33m'
+export COLOR_YELLOW='\e[0;33m'
 export COLOR_GRAY='\e[1;30m'
 export COLOR_LIGHT_GRAY='\e[0;37m'
 
@@ -44,7 +44,7 @@ export HISTCONTROL=ignoreboth
 shopt -s checkwinsize
 
 # Terminal Prompt
-export PS1="\[${COLOR_LIGHT_GRAY}\]\w\[${COLOR_NC}\]\[${COLOR_LIGHT_CYAN}\]\$(__git_ps1 \" %s\")\[${COLOR_NC}\] "
+export PS1="\[${COLOR_YELLOW}\]$ \[${COLOR_PURPLE}\]\w\[${COLOR_NC}\]\[${COLOR_CYAN}\]\$(__git_ps1 \" %s\")\[${COLOR_NC}\] "
 export PS2='> '
 export PS3='#? '
 export PS4='+ '

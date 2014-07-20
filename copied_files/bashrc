@@ -1,8 +1,8 @@
 ########################################################
 # bootstrap Square bashrc; please don't change this bit.
 ########################################################
-if [[ -f "$YU_HOME/github.com/seansu4you87/dotfiles/bash/bashrc" ]]; then
-  source $YU_HOME/github.com/seansu4you87/dotfiles/bash/bashrc
+if [[ -f "$DOTFILES_HOME/bash/bashrc" ]]; then
+  source $DOTFILES_HOME/bash/bashrc
 fi
 ########################################################
 

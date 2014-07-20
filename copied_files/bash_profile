@@ -1,12 +1,27 @@
 #################################################################
 # bootstrap Sean Yu's bash_profile; please don't change this bit.
 #################################################################
+
+# YU_HOME
 if [[ -d "$HOME/Development" ]]; then
   YU_HOME=$HOME/Development
 fi
 export YU_HOME
-if [[ -f "$YU_HOME/config_files/github.com/seansu4you87/dotfiles/bash/bash_profile" ]]; then
-  source $YU_HOME/github.com/seansu4you87/dotfiles/bash/bash_profile
+
+# GITHUB_HOME
+if [[ -d "$YU_HOME/github.com/seansu4you87" ]]; then
+  GITHUB_HOME=$YU_HOME/github.com/seansu4you87
+fi
+export GITHUB_HOME
+
+# DOTFILES_HOME
+if [[ -d "$GITHUB_HOME/dotfiles" ]]; then
+  DOTFILES_HOME=$GITHUB_HOME/dotfiles
+fi
+export DOTFILES_HOME
+
+if [[ -f "$DOTFILES_HOME/bash/bash_profile" ]]; then
+  source $DOTFILES_HOME/bash/bash_profile
 fi
 ##############################################################
 
