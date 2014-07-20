@@ -20,7 +20,7 @@ function link_files_from_dir() {
         ln -s $source $target
       fi
     elif [ ! -L "$target" ] || [ "$source" != "$(readlink $target)" ]; then
-      echo "Skipping $target. Remove to symlink to the dotfiles version."
+      echo "Skipping $target. Remove to symlink to the dottie version."
     fi
   done
 }

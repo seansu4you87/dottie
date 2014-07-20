@@ -1,8 +1,8 @@
 ########################################################
 # bootstrap Square bashrc; please don't change this bit.
 ########################################################
-if [[ -f "$DOTFILES_HOME/bash/bashrc" ]]; then
-  source $DOTFILES_HOME/bash/bashrc
+if [[ -f "$DOTTIE_HOME/bash/bashrc" ]]; then
+  source $DOTTIE_HOME/bash/bashrc
 fi
 ########################################################
 

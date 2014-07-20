@@ -8,8 +8,8 @@ if [ -z "$GITHUB_HOME" ]; then
   return
 fi
 
-if [ -z "$DOTFILES_HOME" ]; then
-  echo "DOTFILES_HOME environment variable isn't defined! Please set it!"
+if [ -z "$DOTTIE_HOME" ]; then
+  echo "DOTTIE_HOME environment variable isn't defined! Please set it!"
   return
 fi
 
@@ -31,7 +31,7 @@ fi
 unset i
 
 # Source aliases
-[[ -f "$DOTFILES_HOME/bash/aliases" ]] && source "$DOTFILES_HOME/bash/aliases"
+[[ -f "$DOTTIE_HOME/bash/aliases" ]] && source "$DOTTIE_HOME/bash/aliases"
 
 # Source bashrc
 [[ -f "$HOME/.bashrc" ]] && source "$HOME/.bashrc"

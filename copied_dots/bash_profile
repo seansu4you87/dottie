@@ -14,14 +14,14 @@ if [[ -d "$YU_HOME/github.com/seansu4you87" ]]; then
 fi
 export GITHUB_HOME
 
-# DOTFILES_HOME
-if [[ -d "$GITHUB_HOME/dotfiles" ]]; then
-  DOTFILES_HOME=$GITHUB_HOME/dotfiles
+# DOTTIE_HOME
+if [[ -d "$GITHUB_HOME/dottie" ]]; then
+  DOTTIE_HOME=$GITHUB_HOME/dottie
 fi
-export DOTFILES_HOME
+export DOTTIE_HOME
 
-if [[ -f "$DOTFILES_HOME/bash/bash_profile" ]]; then
-  source $DOTFILES_HOME/bash/bash_profile
+if [[ -f "$DOTTIE_HOME/bash/bash_profile" ]]; then
+  source $DOTTIE_HOME/bash/bash_profile
 fi
 ##############################################################
 

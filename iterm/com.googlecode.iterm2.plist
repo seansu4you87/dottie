@@ -1041,7 +1041,7 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Development/github.com/seansu4you87/dotfiles/iterm</string>
+	<string>~/Development/github.com/seansu4you87/dottie/iterm</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -3324,7 +3324,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/seansu4you87/Development/github.com/seansu4you87/dotfiles/iterm</string>
+	<string>/Users/seansu4you87/Development/github.com/seansu4you87/dottie/iterm</string>
 	<key>PromptOnClose</key>
 	<true/>
 	<key>PromptOnQuit</key>
