@@ -8,10 +8,6 @@ if [[ -d "$HOME/bin" ]]; then
   export PATH="$HOME/bin:$PATH"
 fi
 
-if [[ -d "/usr/local/sbin" ]]; then
-  export PATH="$PATH:/usr/local/sbin"
-fi
-
 # Add the git-extras to your path if you have it
 if [[ -d "$YU_HOME/git-extras" ]]; then
   export PATH="$YU_HOME/git-extras:$PATH"
@@ -31,8 +27,18 @@ unset i
 [[ -f "$HOME/.bashrc" ]] && source "$HOME/.bashrc"
 
 # In case the user does not have git completion
-# function __git_ps1() {
-#   echo ''
-# }
+function __git_ps1() {
+  echo ''
+}
+
+if [[ -n $(which brew) && -f "$(brew --prefix)/etc/bash_completion" ]]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
+if [[ -d "/usr/local/sbin" ]]; then
+  export PATH="$PATH:/usr/local/sbin"
+fi
+
+export GIT_PS1_SHOWDIRTYSTATE=true
 
 # vim: filetype=sh

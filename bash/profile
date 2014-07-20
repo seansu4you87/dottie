@@ -1,0 +1,11 @@
+if [ -n "${BASH_SOURCE[0]}" ]; then
+  for file in ${BASH_SOURCE[0]}.d/*; do
+    source $file
+  done
+else
+  for file in ${0}.d/*; do
+    source $file
+  done
+fi
+
+# vim: filetype=sh
