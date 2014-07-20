@@ -1,5 +1,9 @@
 # Path
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH"
+PATH="/usr/local/bin:$PATH"
+PATH="/usr/local/sbin:$PATH"
+PATH="/usr/local/share/npm/bin:$PATH"
+PATH="$HOME/Library/python/2.7/bin/:$PATH"
+export PATH
 
 # Editor
 export EDITOR='vim'

@@ -53,6 +53,12 @@ brew_install() {
 # these are both required for git tab-completion to work
 brew_install bash-completion
 brew_install git
+brew_install ack
+
+brew_install python
+pip install https://github.com/Lokaltog/powerline/tarball/develop
+POWERLINE_PATH="$HOME/Library/Python/2.7/lib/python/site-packages/powerline"
+export POWERLINE_PATH
 
 link_files_from_dir "dots" "."
 copy_files_from_dir "copied_files" "."
