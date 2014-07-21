@@ -1011,7 +1011,7 @@
 	<key>HideMenuBarInFullscreen</key>
 	<true/>
 	<key>HideScrollbar</key>
-	<false/>
+	<true/>
 	<key>HideTab</key>
 	<true/>
 	<key>HighlightTabLabels</key>
@@ -1040,8 +1040,12 @@
 	<true/>
 	<key>MaxVertically</key>
 	<false/>
+	<key>NSFontPanelAttributes</key>
+	<string>1, 0</string>
+	<key>NSFontPanelPreviewHeight</key>
+	<real>0.0</real>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Development/github.com/seansu4you87/dottie/iterm</string>
+	<string>~/Development/github.com/seansu4you87/dotfiles</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -1065,14 +1069,93 @@
 	<array/>
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
+	<key>NSToolbar Configuration Terminal Toolbar</key>
+	<dict>
+		<key>TB Display Mode</key>
+		<integer>1</integer>
+		<key>TB Icon Size Mode</key>
+		<integer>1</integer>
+		<key>TB Is Shown</key>
+		<integer>0</integer>
+		<key>TB Size Mode</key>
+		<integer>1</integer>
+	</dict>
+	<key>NSWindow Frame NSFontPanel</key>
+	<string>798 415 444 270 0 0 1440 878 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>648 585 924 485 0 0 2560 1418 </string>
-	<key>NSWindow Frame SUStatusFrame</key>
-	<string>1088 967 384 129 0 0 2560 1418 </string>
+	<string>144 426 924 485 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 6 2554 1412 0 0 2560 1418 </string>
+	<string>3 11 1914 1160 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1280 942 650 476 0 0 2560 1418 </string>
+	<string>3 713 650 458 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 10</key>
+	<string>698 888 650 458 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 11</key>
+	<string>729 857 650 458 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 12</key>
+	<string>761 827 650 458 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 13</key>
+	<string>793 796 650 458 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 14</key>
+	<string>824 765 650 458 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 15</key>
+	<string>856 735 650 458 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 16</key>
+	<string>887 704 650 458 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 17</key>
+	<string>919 673 650 458 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 18</key>
+	<string>950 643 650 458 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 19</key>
+	<string>982 612 650 458 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>3 5 2554 1412 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 20</key>
+	<string>1014 581 650 458 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 21</key>
+	<string>1045 551 650 458 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 22</key>
+	<string>1077 520 650 458 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 23</key>
+	<string>1108 489 650 458 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 24</key>
+	<string>1140 459 650 458 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 25</key>
+	<string>1172 428 650 458 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 26</key>
+	<string>1203 397 650 458 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 27</key>
+	<string>1235 367 650 458 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 28</key>
+	<string>1266 336 650 458 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 29</key>
+	<string>1298 305 650 458 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 3</key>
+	<string>0 0 2554 1178 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 30</key>
+	<string>1329 275 650 458 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 31</key>
+	<string>1361 244 650 458 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 32</key>
+	<string>1393 213 650 458 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 33</key>
+	<string>1424 183 650 458 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 34</key>
+	<string>968 114 650 458 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 35</key>
+	<string>989 91 650 458 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 4</key>
+	<string>307 74 650 458 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 5</key>
+	<string>481 75 650 458 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 6</key>
+	<string>571 11 650 458 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 7</key>
+	<string>603 960 650 458 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 8</key>
+	<string>635 949 650 458 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 9</key>
+	<string>666 919 650 458 0 0 2560 1418 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -3324,7 +3407,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/seansu4you87/Development/github.com/seansu4you87/dottie/iterm</string>
+	<string>/Users/yu/Development/github.com/seansu4you87/dottie/iterm</string>
 	<key>PromptOnClose</key>
 	<true/>
 	<key>PromptOnQuit</key>
@@ -3344,7 +3427,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-07-19T18:57:40Z</date>
+	<date>2014-07-21T20:20:57Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
