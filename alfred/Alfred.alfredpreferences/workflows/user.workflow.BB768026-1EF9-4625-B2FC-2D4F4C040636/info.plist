@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>connections</key>
+	<dict>
+		<key>A59E2626-C2BE-4732-B22A-198CC79C68B5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9CB94471-84FD-48F3-ABE2-9A9413EF72D7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Matthew Todd</string>
+	<key>description</key>
+	<string>Open an item in your checklist.</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Checklist</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>checklist</string>
+				<key>subtext</key>
+				<string>Open an item in your checklist.</string>
+				<key>text</key>
+				<string>Checklist</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>A59E2626-C2BE-4732-B22A-198CC79C68B5</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>${HOME}/bin/checklist {query}</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>9CB94471-84FD-48F3-ABE2-9A9413EF72D7</string>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>9CB94471-84FD-48F3-ABE2-9A9413EF72D7</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>A59E2626-C2BE-4732-B22A-198CC79C68B5</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://matthewtodd.org/</string>
+</dict>
+</plist>

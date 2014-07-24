@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>org.qandr.alfred.iterm2</string>
+	<key>connections</key>
+	<dict>
+		<key>0C62CBF2-7CEB-4204-844A-DE8FCB9A3573</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C63B572E-C83B-4ACB-A175-8E70AE49994B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Quentin Stafford-Fraser</string>
+	<key>description</key>
+	<string>Opening iTerm2 profiles</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>iTerm Profiles</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>keyword</key>
+				<string>itp</string>
+				<key>runningsubtext</key>
+				<string>reading names...</string>
+				<key>script</key>
+				<string>import xml.etree.ElementTree as ET
+import biplist
+import os
+import sys
+
+q="{query}"
+
+profile_file = os.path.join(
+	os.environ["HOME"],
+	"Library","Preferences","com.googlecode.iterm2.plist")
+pl = biplist.readPlist(profile_file)
+names = [nb.get('Name') for nb in pl['New Bookmarks']]
+if len("{query}") &gt; 1:
+	names = [n for n in names if q.lower() in n.lower()]
+names.sort(key=str.lower)
+root = ET.Element('items')
+for n in names:
+	ie = ET.Element('item', valid="yes", arg=n)
+	te = ET.Element('title')
+	te.text = n
+	ie.append(te)
+	icon = ET.Element('icon')
+	icon.text="icon.png"
+	ie.append(icon)
+	root.append(ie)
+print '&lt;?xml version="1.0"?&gt;'
+print ET.tostring(root)
+print ""
+</string>
+				<key>subtext</key>
+				<string>Choose a profile name</string>
+				<key>title</key>
+				<string>iTerm2 Profiles</string>
+				<key>type</key>
+				<integer>3</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>0C62CBF2-7CEB-4204-844A-DE8FCB9A3573</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+tell application "iTerm"
+activate
+
+-- If you prefer a new tab rather than a new window,
+-- change the "tell (make new terminal)" line below to:
+--
+-- set t to (last terminal)
+-- tell t
+
+tell (make new terminal)
+    launch session q
+end tell
+end tell
+end alfred_script
+
+</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>C63B572E-C83B-4ACB-A175-8E70AE49994B</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>The very handy iTerm 2 utility is a terminal program with lots of great features beyond the standard OS X Terminal.
+
+One of these is the concept of 'Profiles'. A profile can save a particular configuration, including things like background colours, but most importantly, including an initial command to be run when the terminal is started.  You can have a profile called 'Production', for example, which sets the background colour to bright red and does an ssh in to your production webserver, and changes to your most commonly-used directory.
+
+This plugin shows your current list of iTerm 2 profiles, and lets you select one.
+
+(Thanks to Andrew Wooster for the python 'biplist' module, on which this depends.)</string>
+	<key>uidata</key>
+	<dict>
+		<key>0C62CBF2-7CEB-4204-844A-DE8FCB9A3573</key>
+		<dict>
+			<key>ypos</key>
+			<real>70</real>
+		</dict>
+		<key>C63B572E-C83B-4ACB-A175-8E70AE49994B</key>
+		<dict>
+			<key>ypos</key>
+			<real>70</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://qandr.org/quentin/software/alfred_itp</string>
+</dict>
+</plist>
