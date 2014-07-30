@@ -167,7 +167,7 @@
 				<key>hotkey</key>
 				<integer>0</integer>
 				<key>hotmod</key>
-				<integer>1179648</integer>
+				<integer>1310720</integer>
 				<key>hotstring</key>
 				<string>A</string>
 				<key>leftcursor</key>
@@ -255,7 +255,7 @@
 				<key>hotkey</key>
 				<integer>14</integer>
 				<key>hotmod</key>
-				<integer>1179648</integer>
+				<integer>1310720</integer>
 				<key>hotstring</key>
 				<string>E</string>
 				<key>leftcursor</key>
@@ -282,9 +282,9 @@
 				<key>hotkey</key>
 				<integer>44</integer>
 				<key>hotmod</key>
-				<integer>1179648</integer>
+				<integer>1310720</integer>
 				<key>hotstring</key>
-				<string>?</string>
+				<string>/</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -326,7 +326,7 @@
 				<key>hotkey</key>
 				<integer>8</integer>
 				<key>hotmod</key>
-				<integer>1179648</integer>
+				<integer>1310720</integer>
 				<key>hotstring</key>
 				<string>C</string>
 				<key>leftcursor</key>
@@ -387,7 +387,7 @@
 				<key>hotkey</key>
 				<integer>13</integer>
 				<key>hotmod</key>
-				<integer>1179648</integer>
+				<integer>1310720</integer>
 				<key>hotstring</key>
 				<string>W</string>
 				<key>leftcursor</key>
@@ -414,7 +414,7 @@
 				<key>hotkey</key>
 				<integer>46</integer>
 				<key>hotmod</key>
-				<integer>1179648</integer>
+				<integer>1310720</integer>
 				<key>hotstring</key>
 				<string>M</string>
 				<key>leftcursor</key>
@@ -485,7 +485,7 @@
 				<key>hotkey</key>
 				<integer>35</integer>
 				<key>hotmod</key>
-				<integer>1835008</integer>
+				<integer>1310720</integer>
 				<key>hotstring</key>
 				<string>P</string>
 				<key>leftcursor</key>
@@ -529,7 +529,7 @@
 				<key>hotkey</key>
 				<integer>4</integer>
 				<key>hotmod</key>
-				<integer>1179648</integer>
+				<integer>1310720</integer>
 				<key>hotstring</key>
 				<string>H</string>
 				<key>leftcursor</key>
@@ -590,7 +590,7 @@
 				<key>hotkey</key>
 				<integer>38</integer>
 				<key>hotmod</key>
-				<integer>1179648</integer>
+				<integer>1310720</integer>
 				<key>hotstring</key>
 				<string>J</string>
 				<key>leftcursor</key>
@@ -634,7 +634,7 @@
 				<key>hotkey</key>
 				<integer>15</integer>
 				<key>hotmod</key>
-				<integer>1179648</integer>
+				<integer>1310720</integer>
 				<key>hotstring</key>
 				<string>R</string>
 				<key>leftcursor</key>
