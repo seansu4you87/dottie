@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customSites</key>
+	<dict>
+		<key>60684128-C95C-414C-8ECF-93CA73766CCD</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>hoo</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>hoogle</string>
+			<key>url</key>
+			<string>http://www.haskell.org/hoogle/?hoogle={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>F7BD1E6D-A7E2-4133-A5EA-73D1F1DBD773</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>go</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>go square</string>
+			<key>url</key>
+			<string>https://go.squareup.com/{query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
