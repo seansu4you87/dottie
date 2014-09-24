@@ -140,6 +140,17 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>E9CBCDD1-FC69-45D8-95A5-566C85FBFEEA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>78CC0273-48BA-485B-B2D2-580C06772EAB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string></string>
@@ -699,6 +710,23 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/AppCode.app</string>
+				</array>
+				<key>toggle</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>852532D8-DB3B-4DFA-8A03-DBFC52F02E19</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -739,6 +767,50 @@
 			<string>FDFF8A4B-AEEF-4527-96DD-C77C5F33C93E</string>
 			<key>version</key>
 			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/Asana.app</string>
+				</array>
+				<key>toggle</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>78CC0273-48BA-485B-B2D2-580C06772EAB</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>hotkey</key>
+				<integer>1</integer>
+				<key>hotmod</key>
+				<integer>1310720</integer>
+				<key>hotstring</key>
+				<string>S</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>E9CBCDD1-FC69-45D8-95A5-566C85FBFEEA</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -820,6 +892,16 @@
 			<key>ypos</key>
 			<real>300</real>
 		</dict>
+		<key>78CC0273-48BA-485B-B2D2-580C06772EAB</key>
+		<dict>
+			<key>ypos</key>
+			<real>1980</real>
+		</dict>
+		<key>852532D8-DB3B-4DFA-8A03-DBFC52F02E19</key>
+		<dict>
+			<key>ypos</key>
+			<real>1740</real>
+		</dict>
 		<key>8B9F0A77-9058-4CF9-9E74-22CFC9EDD7EE</key>
 		<dict>
 			<key>ypos</key>
@@ -864,6 +946,11 @@
 		<dict>
 			<key>ypos</key>
 			<real>420</real>
+		</dict>
+		<key>E9CBCDD1-FC69-45D8-95A5-566C85FBFEEA</key>
+		<dict>
+			<key>ypos</key>
+			<real>1980</real>
 		</dict>
 		<key>EFCAE3A9-3044-470C-9F62-C6E304B40A04</key>
 		<dict>
