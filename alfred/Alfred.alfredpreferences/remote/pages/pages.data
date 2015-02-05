@@ -2,13 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>hidecog</key>
-	<true/>
-	<key>hidehat</key>
-	<true/>
-	<key>hidemenu</key>
-	<true/>
-	<key>showOnScreen</key>
-	<integer>2</integer>
+	<key>pages</key>
+	<array>
+		<string>CD59158B-2593-4999-8C6B-7CB39DDF678D</string>
+	</array>
+	<key>uid</key>
+	<string>E5EF6BAE-F98D-415D-8728-8A7EC39348F2</string>
 </dict>
 </plist>

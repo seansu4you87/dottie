@@ -17,3 +17,4 @@ bind-key W set-option -g pane-active-border-fg white \; set-option -g pane-borde
 bind-key S attach-session -t []
 bind-key P attach-session -t pager
 bind-key V attach-session -t vivi
+bind-key I attach-session -t =]
