@@ -1,6 +1,7 @@
 Bundle 'bling/vim-airline'
 Bundle 'Blackrush/vim-gocode'
 Bundle 'wting/rust.vim'
+Bundle 'elixir-lang/vim-elixir'
 
 " Commented out cause Ember handlebars still give fucked up syntax
 " highlighting
