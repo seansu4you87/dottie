@@ -39,6 +39,17 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>4E89E98E-ADE4-41CD-97DD-8BA4EBE291BF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DCB64C71-6035-461D-9033-E69BF759D4AE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>5231B202-C7FE-4F35-8BCA-85E11E7C12C1</key>
 		<array>
 			<dict>
@@ -354,7 +365,7 @@
 			<dict>
 				<key>paths</key>
 				<array>
-					<string>/Applications/Calendar.app</string>
+					<string>/Applications/Fantastical 2.app</string>
 				</array>
 				<key>toggle</key>
 				<true/>
@@ -943,6 +954,50 @@
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/Wunderlist.app</string>
+				</array>
+				<key>toggle</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>DCB64C71-6035-461D-9033-E69BF759D4AE</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>hotkey</key>
+				<integer>48</integer>
+				<key>hotmod</key>
+				<integer>1310720</integer>
+				<key>hotstring</key>
+				<string>⇥</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>4E89E98E-ADE4-41CD-97DD-8BA4EBE291BF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -997,6 +1052,11 @@
 		<dict>
 			<key>ypos</key>
 			<real>900</real>
+		</dict>
+		<key>4E89E98E-ADE4-41CD-97DD-8BA4EBE291BF</key>
+		<dict>
+			<key>ypos</key>
+			<real>2580</real>
 		</dict>
 		<key>5231B202-C7FE-4F35-8BCA-85E11E7C12C1</key>
 		<dict>
@@ -1097,6 +1157,11 @@
 		<dict>
 			<key>ypos</key>
 			<real>60</real>
+		</dict>
+		<key>DCB64C71-6035-461D-9033-E69BF759D4AE</key>
+		<dict>
+			<key>ypos</key>
+			<real>2580</real>
 		</dict>
 		<key>E0B9B141-C9E0-457C-9417-89CA847B667A</key>
 		<dict>

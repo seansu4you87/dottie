@@ -8,7 +8,7 @@ bind-key L resize-pane -R 5
 bind-key p last-window
 
 # (SEAN) Status Bar for Squarebook I think?
-# source "/usr/local/lib/python2.7/site-packages/powerline/bindings/tmux/powerline.conf"
+source "/usr/local/lib/python2.7/site-packages/powerline/bindings/tmux/powerline.conf"
 
 # (SEAN) Keys to switch color since $COLORFGBG isn't accurate when in tmux
 bind-key B set-option -g pane-active-border-fg black \; set-option -g pane-border-fg black
@@ -20,4 +20,4 @@ bind-key V attach-session -t vivi
 
 # (SEAN) powerline for iMac
 run-shell "powerline-daemon -q"
-source ~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/tmux/powerline.conf
+# source ~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/tmux/powerline.conf
