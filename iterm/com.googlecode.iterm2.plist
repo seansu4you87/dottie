@@ -874,9 +874,9 @@
 	<key>Default Bookmark Guid</key>
 	<string>4A08D834-097E-4235-AFA9-68DE6FEAF4B2</string>
 	<key>DimBackgroundWindows</key>
-	<true/>
+	<false/>
 	<key>DimInactiveSplitPanes</key>
-	<true/>
+	<false/>
 	<key>DimOnlyText</key>
 	<false/>
 	<key>DisableFullscreenTransparency</key>
@@ -1083,11 +1083,11 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>798 415 444 270 0 0 1440 878 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>498 376 924 485 0 0 1920 1177 </string>
+	<string>498 388 924 485 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>34 220 650 458 0 0 1920 1177 </string>
+	<string>3 13 1914 1160 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>950 349 650 458 0 0 1920 1177 </string>
+	<string>3 11 1914 1160 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 10</key>
 	<string>698 888 650 458 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 11</key>
@@ -1109,7 +1109,7 @@
 	<key>NSWindow Frame iTerm Window 19</key>
 	<string>982 612 650 458 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>425 6 650 458 0 0 1920 1177 </string>
+	<string>3 713 650 458 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 20</key>
 	<string>1014 581 650 458 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 21</key>
@@ -1131,7 +1131,7 @@
 	<key>NSWindow Frame iTerm Window 29</key>
 	<string>1298 305 650 458 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>3 11 1914 1160 0 0 1920 1178 </string>
+	<string>3 713 650 458 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 30</key>
 	<string>1329 275 650 458 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 31</key>
@@ -4091,6 +4091,10 @@
 	</array>
 	<key>NoSyncNeverRemindPrefsChangesCopy</key>
 	<true/>
+	<key>NoSyncTimeOfLastPromo</key>
+	<real>453315962.79823202</real>
+	<key>NoSyncTimeOfLastPromoDownload</key>
+	<real>467691820.648812</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -4157,11 +4161,11 @@
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedURL</key>
-	<string>http://iterm2.com/appcasts/testing.xml</string>
+	<string>https://iterm2.com/appcasts/testing.xml</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-05-14T17:05:46Z</date>
+	<date>2015-10-27T22:13:24Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -4169,7 +4173,7 @@
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowPaneTitles</key>
-	<true/>
+	<false/>
 	<key>SmartPlacement</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
@@ -4199,7 +4203,7 @@
 	<key>WebKitStandardFont</key>
 	<string>Lucida Grande</string>
 	<key>WindowNumber</key>
-	<false/>
+	<true/>
 	<key>WindowStyle</key>
 	<integer>0</integer>
 	<key>WordCharacters</key>
@@ -4209,6 +4213,6 @@
 	<key>findRegex_iTerm</key>
 	<true/>
 	<key>iTerm Version</key>
-	<string>2.1</string>
+	<string>2.1.4</string>
 </dict>
 </plist>
