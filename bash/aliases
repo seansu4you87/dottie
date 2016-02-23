@@ -1,3 +1,8 @@
+# vim: filetype=sh
+
+alias kupo="cd $KUPO_HOME"
+alias dots="cd $DOTTIE_HOME"
+
 # Convenient stuff
 alias ..="cd .."
 alias ...="cd ../.."
@@ -65,8 +70,6 @@ alias gs='git status'
 alias gss='git status --short --branch'
 alias gu="$EDITOR ~/.gitconfig"
 alias gum="echo 'Resetting master to the latest origin/master...' && git fetch && git update-ref refs/heads/master origin/master"
-alias rtd="git fetch && git log --abbrev-commit --no-merges --reverse --pretty=format:'%C(yellow)%h%Creset %C(bold)%s%C(green) %an' origin/hoist/sjc1b/production..origin/deployable"
-alias sjcrtd=rtd
 alias ungreen="git log --abbrev-commit --reverse --pretty=format:'%C(yellow)%h%Creset %C(bold)%s%Creset %an' origin/ci-master-distributed-latest..origin/master"
 
 # Xcode
@@ -81,16 +84,21 @@ function be {
 alias beer="be rake"
 alias bees="be rspec"
 
-# vim: filetype=sh
-
-# vim: filetype=sh
-
 # Tailing
 alias pgtail="tail -f /usr/local/var/postgres/server.log"
 alias redtail="redis-cli monitor"
 
-# cURL
-function perf {
-  curl -o /dev/null  -s -w "%{time_connect} + %{time_starttransfer} = %{time_total}\n" "$1"
-}
-alias sniff='curl -w "@$DOTTIE_HOME/bash/sniff.txt" -o /dev/null -s '
+# HTTP Performance
+alias perf='curl -o /dev/null  -s -w "%{time_connect} + %{time_starttransfer} = %{time_total}\n"'
+alias sniff='curl -w "@$DOTTIE_HOME/bash/sniff.txt" -o /dev/null -s'
+alias loaf='wrk -t8 -c100 -d30S --timeout 2000'
+
+# Square
+alias rtd="git fetch && git log --abbrev-commit --no-merges --reverse --pretty=format:'%C(yellow)%h%Creset %C(bold)%s%C(green) %an' origin/hoist/sjc1b/production..origin/deployable"
+alias sjcrtd=rtd
+
+# DoorDash
+alias abv="source venv/bin/activate" # activate python virtual env
+alias doorstep="cd $DOORDASH_HOME/doorstep-django"
+alias dapple="cd $DOORDASH_HOME/doordash-consumer-ios"
+
