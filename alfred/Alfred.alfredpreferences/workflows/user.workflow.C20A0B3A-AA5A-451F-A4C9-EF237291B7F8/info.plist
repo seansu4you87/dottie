@@ -76,7 +76,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>1835A317-587F-4206-811D-C41C1E795AC3</string>
+				<string>31A79243-93F3-49D1-B63D-569F671A5BFD</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -98,7 +98,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>04804D5B-5345-4C54-8529-7B11411CD08A</string>
+				<string>AFA6FB47-C5B1-47BB-99AF-94246B88A9AA</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -468,23 +468,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>paths</key>
-				<array>
-					<string>/Applications/Maps.app</string>
-				</array>
-				<key>toggle</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
-			<key>uid</key>
-			<string>1835A317-587F-4206-811D-C41C1E795AC3</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -508,6 +491,23 @@
 			<string>6057DEAA-EDB3-411B-BFE3-46D2791DC61A</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/PyCharm.app</string>
+				</array>
+				<key>toggle</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>31A79243-93F3-49D1-B63D-569F671A5BFD</string>
+			<key>version</key>
+			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -592,7 +592,7 @@
 			<dict>
 				<key>paths</key>
 				<array>
-					<string>/Applications/IntelliJ IDEA 14.app</string>
+					<string>/Applications/IntelliJ IDEA 15 CE.app</string>
 				</array>
 				<key>toggle</key>
 				<true/>
@@ -600,7 +600,7 @@
 			<key>type</key>
 			<string>alfred.workflow.action.launchfiles</string>
 			<key>uid</key>
-			<string>04804D5B-5345-4C54-8529-7B11411CD08A</string>
+			<string>AFA6FB47-C5B1-47BB-99AF-94246B88A9AA</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -636,7 +636,7 @@
 			<dict>
 				<key>paths</key>
 				<array>
-					<string>/Applications/Xcode.app</string>
+					<string>/Applications/AppCode.app</string>
 				</array>
 				<key>toggle</key>
 				<true/>
@@ -785,7 +785,7 @@
 			<dict>
 				<key>paths</key>
 				<array>
-					<string>/Applications/Day One.app</string>
+					<string>/Applications/Day One.localized/Day One.app</string>
 				</array>
 				<key>toggle</key>
 				<true/>
@@ -1003,11 +1003,6 @@
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>04804D5B-5345-4C54-8529-7B11411CD08A</key>
-		<dict>
-			<key>ypos</key>
-			<real>1500</real>
-		</dict>
 		<key>05D971F4-1821-4D34-AA0D-F809335D83D3</key>
 		<dict>
 			<key>ypos</key>
@@ -1017,11 +1012,6 @@
 		<dict>
 			<key>ypos</key>
 			<real>900</real>
-		</dict>
-		<key>1835A317-587F-4206-811D-C41C1E795AC3</key>
-		<dict>
-			<key>ypos</key>
-			<real>1020</real>
 		</dict>
 		<key>1955F48F-3B0E-4828-A95E-5B93AC071744</key>
 		<dict>
@@ -1037,6 +1027,11 @@
 		<dict>
 			<key>ypos</key>
 			<real>1380</real>
+		</dict>
+		<key>31A79243-93F3-49D1-B63D-569F671A5BFD</key>
+		<dict>
+			<key>ypos</key>
+			<real>1020</real>
 		</dict>
 		<key>3BC8450D-51DA-45D0-AE14-2BA943EB3573</key>
 		<dict>
@@ -1137,6 +1132,11 @@
 		<dict>
 			<key>ypos</key>
 			<real>660</real>
+		</dict>
+		<key>AFA6FB47-C5B1-47BB-99AF-94246B88A9AA</key>
+		<dict>
+			<key>ypos</key>
+			<real>1500</real>
 		</dict>
 		<key>B19A0BA1-1323-47BB-A74C-F4C2E92321F4</key>
 		<dict>

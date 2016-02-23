@@ -19,7 +19,8 @@ function profile {
   $EDITOR ~/.bash_profile && source ~/.bash_profile
 }
 function aliases {
-  $EDITOR ~/.aliases && source ~/.aliases
+  # $EDITOR ~/.aliases && source ~/.aliases
+  $EDITOR $DOTTIE_HOME/bash/aliases && source ~/.bash_profile
 }
 
 alias ducks='du -cksh * | sort -rn|head -11' # Lists folders and files sizes in the current folder
@@ -83,3 +84,13 @@ alias bees="be rspec"
 # vim: filetype=sh
 
 # vim: filetype=sh
+
+# Tailing
+alias pgtail="tail -f /usr/local/var/postgres/server.log"
+alias redtail="redis-cli monitor"
+
+# cURL
+function perf {
+  curl -o /dev/null  -s -w "%{time_connect} + %{time_starttransfer} = %{time_total}\n" "$1"
+}
+alias sniff='curl -w "@$DOTTIE_HOME/bash/sniff.txt" -o /dev/null -s '
