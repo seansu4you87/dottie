@@ -84,8 +84,11 @@ function be {
 alias beer="be rake"
 alias bees="be rspec"
 
-# Tailing
+# Postgres
 alias pgtail="tail -f /usr/local/var/postgres/server.log"
+alias pgconf="vim /usr/local/var/postgres/postgresql.conf"
+
+# Redis
 alias redtail="redis-cli monitor"
 
 # HTTP Performance
@@ -93,12 +96,12 @@ alias perf='curl -o /dev/null  -s -w "%{time_connect} + %{time_starttransfer} = 
 alias sniff='curl -w "@$DOTTIE_HOME/bash/sniff.txt" -o /dev/null -s'
 alias loaf='wrk -t8 -c100 -d30S --timeout 2000'
 
-# Square
+# [] Square
 alias rtd="git fetch && git log --abbrev-commit --no-merges --reverse --pretty=format:'%C(yellow)%h%Creset %C(bold)%s%C(green) %an' origin/hoist/sjc1b/production..origin/deployable"
 alias sjcrtd=rtd
 
-# DoorDash
+# DD DoorDash
 alias abv="source venv/bin/activate" # activate python virtual env
 alias doorstep="cd $DOORDASH_HOME/doorstep-django"
 alias dapple="cd $DOORDASH_HOME/doordash-consumer-ios"
-
+alias dies="run index-stores -m1 && run update-store-statuses -m1" # index elastic search on stores in market 1
