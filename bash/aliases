@@ -23,6 +23,7 @@ alias ip="ifconfig | grep 'inet '"
 function profile {
   $EDITOR ~/.bash_profile && source ~/.bash_profile
 }
+
 function aliases {
   # $EDITOR ~/.aliases && source ~/.aliases
   $EDITOR $DOTTIE_HOME/bash/aliases && source ~/.bash_profile
