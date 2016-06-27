@@ -106,3 +106,4 @@ alias abv="source venv/bin/activate" # activate python virtual env
 alias doorstep="cd $DOORDASH_HOME/doorstep-django"
 alias dapple="cd $DOORDASH_HOME/doordash-consumer-ios"
 alias dies="run index-stores -m1 && run update-store-statuses -m1" # index elastic search on stores in market 1
+alias rad="radon cc -i "tests" -s" # skip tests with randon, --min for min score
