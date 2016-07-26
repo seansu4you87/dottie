@@ -107,3 +107,6 @@ alias doorstep="cd $DOORDASH_HOME/doorstep-django"
 alias dapple="cd $DOORDASH_HOME/doordash-consumer-ios"
 alias dies="run index-stores -m1 && run update-store-statuses -m1" # index elastic search on stores in market 1
 alias rad="radon cc -i "tests" -s" # skip tests with randon, --min for min score
+
+# Coursera ML class
+alias octave="/usr/local/octave/3.8.0/bin/octave-3.8.0"
