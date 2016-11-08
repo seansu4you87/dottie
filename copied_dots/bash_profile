@@ -20,25 +20,21 @@ if [[ -d "$GITHUB_HOME/dottie" ]]; then
 fi
 export DOTTIE_HOME
 
-if [[ -f "$DOTTIE_HOME/bash/bash_profile" ]]; then
-  source $DOTTIE_HOME/bash/bash_profile
-fi
-
 # KUPO_HOME
 if [[ -d "$GITHUB_HOME/kupo" ]]; then
   KUPO_HOME=$GITHUB_HOME/kupo
 fi
 export KUPO_HOME
 
-if [[ -f "$DOTTIE_HOME/bash/bash_profile" ]]; then
-  source $DOTTIE_HOME/bash/bash_profile
-fi
-
 # DOORDASH_HOME
 if [[ -d "$YU_HOME/github.com/chillbear" ]]; then
   DOORDASH_HOME=$YU_HOME/github.com/chillbear
 fi
 export DOORDASH_HOME
+
+if [[ -f "$DOTTIE_HOME/bash/bash_profile" ]]; then
+  source $DOTTIE_HOME/bash/bash_profile
+fi
 
 ##############################################################
 
