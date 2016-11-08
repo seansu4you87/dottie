@@ -104,6 +104,17 @@ alias sniff='curl -w "@$DOTTIE_HOME/bash/sniff.txt" -o /dev/null -s'
 alias loaf='wrk -t8 -c100 -d30S --timeout 2000'
 
 #################################################
+#                  Homebrew                     #
+#################################################
+alias bi="brew info"
+alias bs="brew search"
+alias brm="brew rm"
+alias bsl="brew services list"
+alias bss="brew services start"
+alias bsn="brew services stop"
+alias bsr="brew services restart"
+
+#################################################
 #           Coursera ML Class                   #
 #################################################
 alias octave="/usr/local/octave/3.8.0/bin/octave-3.8.0"
@@ -117,6 +128,8 @@ alias sjcrtd=rtd
 #################################################
 #                DD DoorDash                    #
 #################################################
+alias dd="cd $DOORDASH_HOME" # careful, this overrides an actual bash command, dd
+alias dthrift="cd $DOORDASH_HOME/doordash-thrift"
 
 # Django
 alias abv="source venv/bin/activate" # activate python virtual env
