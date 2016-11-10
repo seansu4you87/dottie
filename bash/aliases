@@ -71,6 +71,7 @@ alias gs='git status'
 alias gss='git status --short --branch'
 alias gu="$EDITOR ~/.gitconfig"
 alias gum="echo 'Resetting master to the latest origin/master...' && git fetch && git update-ref refs/heads/master origin/master"
+alias gip="git commit -m 'WIP'"
 alias ungreen="git log --abbrev-commit --reverse --pretty=format:'%C(yellow)%h%Creset %C(bold)%s%Creset %an' origin/ci-master-distributed-latest..origin/master"
 
 # Xcode
@@ -143,3 +144,5 @@ alias dr="cd $DOORDASH_HOME/deep-red"
 
 # iOS
 alias dapple="cd $DOORDASH_HOME/doordash-consumer-ios"
+
+alias cv="convox"
