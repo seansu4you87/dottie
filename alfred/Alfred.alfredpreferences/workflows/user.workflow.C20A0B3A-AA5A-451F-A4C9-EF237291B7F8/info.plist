@@ -238,6 +238,10 @@
 				<integer>0</integer>
 				<key>argument</key>
 				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>0</integer>
 				<key>hotmod</key>
@@ -265,6 +269,10 @@
 				<integer>0</integer>
 				<key>argument</key>
 				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>14</integer>
 				<key>hotmod</key>
@@ -326,6 +334,10 @@
 				<integer>0</integer>
 				<key>argument</key>
 				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>44</integer>
 				<key>hotmod</key>
@@ -353,6 +365,10 @@
 				<integer>0</integer>
 				<key>argument</key>
 				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>8</integer>
 				<key>hotmod</key>
@@ -414,6 +430,10 @@
 				<integer>0</integer>
 				<key>argument</key>
 				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>13</integer>
 				<key>hotmod</key>
@@ -439,23 +459,6 @@
 			<dict>
 				<key>paths</key>
 				<array>
-					<string>/Applications/Sunrise.app</string>
-				</array>
-				<key>toggle</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
-			<key>uid</key>
-			<string>3BC8450D-51DA-45D0-AE14-2BA943EB3573</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>paths</key>
-				<array>
 					<string>/Applications/Messages.app</string>
 				</array>
 				<key>toggle</key>
@@ -475,6 +478,10 @@
 				<integer>0</integer>
 				<key>argument</key>
 				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>46</integer>
 				<key>hotmod</key>
@@ -502,6 +509,10 @@
 				<integer>0</integer>
 				<key>argument</key>
 				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>35</integer>
 				<key>hotmod</key>
@@ -546,6 +557,10 @@
 				<integer>0</integer>
 				<key>argument</key>
 				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>4</integer>
 				<key>hotmod</key>
@@ -571,23 +586,6 @@
 			<dict>
 				<key>paths</key>
 				<array>
-					<string>/Applications/HipChat.app</string>
-				</array>
-				<key>toggle</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
-			<key>uid</key>
-			<string>8B9F0A77-9058-4CF9-9E74-22CFC9EDD7EE</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>paths</key>
-				<array>
 					<string>/Applications/Slack.app</string>
 				</array>
 				<key>toggle</key>
@@ -597,23 +595,6 @@
 			<string>alfred.workflow.action.launchfiles</string>
 			<key>uid</key>
 			<string>1955F48F-3B0E-4828-A95E-5B93AC071744</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>paths</key>
-				<array>
-					<string>/Applications/Textual.app</string>
-				</array>
-				<key>toggle</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
-			<key>uid</key>
-			<string>1F5E181A-8564-4926-BBBC-3310150D8B19</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -641,6 +622,10 @@
 				<integer>0</integer>
 				<key>argument</key>
 				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>38</integer>
 				<key>hotmod</key>
@@ -685,6 +670,10 @@
 				<integer>0</integer>
 				<key>argument</key>
 				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>7</integer>
 				<key>hotmod</key>
@@ -710,23 +699,6 @@
 			<dict>
 				<key>paths</key>
 				<array>
-					<string>/Applications/AppCode.app</string>
-				</array>
-				<key>toggle</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
-			<key>uid</key>
-			<string>852532D8-DB3B-4DFA-8A03-DBFC52F02E19</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>paths</key>
-				<array>
 					<string>/Applications/iA Writer.app</string>
 				</array>
 				<key>toggle</key>
@@ -746,6 +718,10 @@
 				<integer>0</integer>
 				<key>argument</key>
 				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>15</integer>
 				<key>hotmod</key>
@@ -769,27 +745,14 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>paths</key>
-				<array>
-					<string>/Applications/Asana.app</string>
-				</array>
-				<key>toggle</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
-			<key>uid</key>
-			<string>78CC0273-48BA-485B-B2D2-580C06772EAB</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
 				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>1</integer>
 				<key>hotmod</key>
@@ -834,6 +797,10 @@
 				<integer>0</integer>
 				<key>argument</key>
 				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>0</integer>
 				<key>hotmod</key>
@@ -876,6 +843,10 @@
 				<integer>0</integer>
 				<key>argument</key>
 				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>37</integer>
 				<key>hotmod</key>
@@ -920,6 +891,10 @@
 				<integer>0</integer>
 				<key>argument</key>
 				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>40</integer>
 				<key>hotmod</key>
@@ -947,6 +922,10 @@
 				<integer>0</integer>
 				<key>argument</key>
 				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>5</integer>
 				<key>hotmod</key>
@@ -1008,6 +987,10 @@
 				<integer>0</integer>
 				<key>argument</key>
 				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>48</integer>
 				<key>hotmod</key>
@@ -1061,26 +1044,12 @@
 			<key>ypos</key>
 			<real>1620</real>
 		</dict>
-		<key>1F5E181A-8564-4926-BBBC-3310150D8B19</key>
-		<dict>
-			<key>xpos</key>
-			<integer>500</integer>
-			<key>ypos</key>
-			<real>1380</real>
-		</dict>
 		<key>31A79243-93F3-49D1-B63D-569F671A5BFD</key>
 		<dict>
 			<key>xpos</key>
 			<integer>500</integer>
 			<key>ypos</key>
 			<real>1020</real>
-		</dict>
-		<key>3BC8450D-51DA-45D0-AE14-2BA943EB3573</key>
-		<dict>
-			<key>xpos</key>
-			<integer>500</integer>
-			<key>ypos</key>
-			<real>780</real>
 		</dict>
 		<key>3D54671F-F4E9-4D7F-BBFA-522428B43532</key>
 		<dict>
@@ -1165,27 +1134,6 @@
 			<integer>100</integer>
 			<key>ypos</key>
 			<real>300</real>
-		</dict>
-		<key>78CC0273-48BA-485B-B2D2-580C06772EAB</key>
-		<dict>
-			<key>xpos</key>
-			<integer>500</integer>
-			<key>ypos</key>
-			<real>1980</real>
-		</dict>
-		<key>852532D8-DB3B-4DFA-8A03-DBFC52F02E19</key>
-		<dict>
-			<key>xpos</key>
-			<integer>500</integer>
-			<key>ypos</key>
-			<real>1740</real>
-		</dict>
-		<key>8B9F0A77-9058-4CF9-9E74-22CFC9EDD7EE</key>
-		<dict>
-			<key>xpos</key>
-			<integer>500</integer>
-			<key>ypos</key>
-			<real>1140</real>
 		</dict>
 		<key>932641BC-943D-441A-8425-59A42F1DEB83</key>
 		<dict>
