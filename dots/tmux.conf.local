@@ -20,4 +20,4 @@ bind-key V attach-session -t vivi
 
 # (SEAN) powerline for iMac
 run-shell "powerline-daemon -q"
-# source ~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/tmux/powerline.conf
+source ~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/tmux/powerline.conf
