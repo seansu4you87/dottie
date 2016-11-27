@@ -54,7 +54,7 @@ export HISTCONTROL=ignoreboth
 shopt -s checkwinsize
 
 # Terminal Prompt
-export PS1="\[${COLOR_YELLOW}\]$ \[${COLOR_PURPLE}\]\w\[${COLOR_NC}\]\[${COLOR_CYAN}\]\$(__git_ps1 \" %s\")\[${COLOR_NC}\] "
+export PS1="\[${COLOR_YELLOW}\]$ \[${COLOR_PURPLE}\]\$(python $DOTTIE_HOME/bash/pwd.py)\[${COLOR_NC}\]\[${COLOR_CYAN}\]\$(__git_ps1 \" %s\")\[${COLOR_NC}\] "
 export PS2='> '
 export PS3='#? '
 export PS4='+ '
