@@ -18,6 +18,11 @@ if [[ -d "$HOME/bin" ]]; then
   export PATH="$HOME/bin:$PATH"
 fi
 
+# Add dottie bin folder to path
+if [[ -d "$DOTTIE_HOME/bin" ]]; then
+  export PATH="$DOTTIE_HOME/bin:$PATH"
+fi
+
 # Add the git-extras to your path if you have it
 if [[ -d "$YU_HOME/git-extras" ]]; then
   export PATH="$YU_HOME/git-extras:$PATH"

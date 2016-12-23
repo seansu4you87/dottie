@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Find all files of a regex type, sort by line count, and show top 20
+# Based on the following command:
+# find . -name "*.m" -type f -print0 | xargs -0 wc -l | sort -rn | head -n 20
+
+find_files() {
+  find . -name $1 -type f -print0
+}
+
+count_lines() {
+  xargs -0 wc -l
+}
+
+sort_by_lines() {
+  sort -rn
+}
+
+chop() {
+  head -n 20
+}
+
+find_files $1 | count_lines | sort_by_lines | chop
