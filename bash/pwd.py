@@ -22,4 +22,5 @@ pwd = pwd.replace(home, "~", 1)
 if len(pwd) > 40:
     pwd = pwd[:10] + "..." + pwd[-30:]
 
-print pwd
+print(pwd)
+
