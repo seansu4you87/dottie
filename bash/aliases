@@ -17,6 +17,10 @@ tableflip() {
   echo "（╯°□°）╯ ┻━┻";
 }
 
+shrug() {
+  echo "¯\_(ツ)_/¯";
+}
+
 alias pg="ps ax | grep -v grep | grep -i "
 alias ip="ifconfig | grep 'inet '"
 
@@ -144,5 +148,8 @@ alias dr="cd $DOORDASH_HOME/deep-red"
 
 # iOS
 alias dapple="cd $DOORDASH_HOME/doordash-consumer-ios"
+
+# Raheem
+alias rai="cd /Users/sean/Development/github.com/raheem-ai/seed_web"
 
 alias cv="convox"
