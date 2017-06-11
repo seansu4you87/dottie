@@ -149,7 +149,23 @@ alias dr="cd $DOORDASH_HOME/deep-red"
 # iOS
 alias dapple="cd $DOORDASH_HOME/doordash-consumer-ios"
 
-# Raheem
-alias rai="cd /Users/sean/Development/github.com/raheem-ai/seed_web"
-
 alias cv="convox"
+
+#################################################
+#                   Raheem                      #
+#################################################
+
+alias rai="cd /Users/sean/Development/github.com/raheem-ai/dashboard-rails"
+
+#################################################
+#                Udacity Drive                  #
+#################################################
+
+function drive {
+  cd $GITHUB_HOME/../udacity
+  source activate carnd-term1
+  tmux split-window -h
+  cd $KUPO_HOME/projects/MOOCs/udacity/drive
+  source activate carnd-term1
+  tmux rename-window drive
+}
