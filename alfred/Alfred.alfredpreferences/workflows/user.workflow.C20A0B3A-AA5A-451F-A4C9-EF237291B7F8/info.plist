@@ -549,6 +549,7 @@
 				<key>paths</key>
 				<array>
 					<string>~/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/163.11103.6/IntelliJ IDEA.app</string>
+					<string>~/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/171.4694.23/IntelliJ IDEA.app</string>
 				</array>
 				<key>toggle</key>
 				<true/>
@@ -876,7 +877,7 @@
 			<dict>
 				<key>paths</key>
 				<array>
-					<string>/Applications/Wunderlist.app</string>
+					<string>/Applications/Things3.app</string>
 				</array>
 				<key>toggle</key>
 				<true/>

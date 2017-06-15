@@ -155,7 +155,7 @@ alias cv="convox"
 #                   Raheem                      #
 #################################################
 
-alias rai="cd /Users/sean/Development/github.com/raheem-ai/dashboard-rails"
+alias rai="cd $GITHUB_HOME/../raheem-ai/dashboard-rails"
 
 #################################################
 #                Udacity Drive                  #
