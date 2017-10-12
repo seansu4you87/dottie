@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "from doordash.lib.db.routing import enable_db_writes\nenable_db_writes()",
+    "uid" : "6D3A30E8-DAE3-496E-B299-6259BF9ABDA0",
+    "name" : "ddb",
+    "keyword" : "enable db"
+  }
+}

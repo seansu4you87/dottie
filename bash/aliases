@@ -21,6 +21,10 @@ shrug() {
   echo "¯\_(ツ)_/¯";
 }
 
+ght() {
+  cat ~/Development/.github | pbcopy
+}
+
 alias pg="ps ax | grep -v grep | grep -i "
 alias ip="ifconfig | grep 'inet '"
 
@@ -89,6 +93,28 @@ function be {
 
 alias beer="be rake"
 alias bees="be rspec"
+
+# Weather
+function weather {
+  curl wttr.in/$1
+}
+# alias weather2="curl -4 wttr.in/sanfrancisco"
+# alias moon="
+
+# Unixporn
+
+function blacktitle {
+  echo -e "\033]6;1;bg;red;brightness;0\a"
+  echo -e "\033]6;1;bg;green;brightness;40\a"
+  echo -e "\033]6;1;bg;blue;brightness;51\a"
+}
+
+function whitetitle {
+  echo -e "\033]6;1;bg;red;brightness;253\a"
+  echo -e "\033]6;1;bg;green;brightness;246\a"
+  echo -e "\033]6;1;bg;blue;brightness;227\a"
+}
+
 
 #################################################
 #                 Postgres                      #

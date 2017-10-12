@@ -23,6 +23,7 @@
 	interactive = auto
 [core]
 	excludesfile = ~/.gitignore
+	editor = /Users/sean/bin/vim
 [alias]
 	a = add
 	add-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; git add `f`"
