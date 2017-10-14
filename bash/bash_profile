@@ -38,6 +38,21 @@ unset i
 # Source aliases
 [[ -f "$DOTTIE_HOME/bash/aliases" ]] && source "$DOTTIE_HOME/bash/aliases"
 
+# Changes the titlebar color for iTerm2
+function titlebar {
+  if [ "$ITERM_PROFILE" = "Solarized Dark" ]
+  then
+    blacktitle
+  elif [ "$ITERM_PROFILE" = "Solarized Light" ]
+  then
+    whitetitle
+  elif [ "$ITERM_PROFILE" = "Paraiso" ]
+  then
+    purptitle
+  fi
+}
+titlebar
+
 # Source bashrc
 [[ -f "$HOME/.bashrc" ]] && source "$HOME/.bashrc"
 
