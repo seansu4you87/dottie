@@ -35320,11 +35320,11 @@
 	<key>Default Bookmark Guid</key>
 	<string>4A08D834-097E-4235-AFA9-68DE6FEAF4B2</string>
 	<key>DimBackgroundWindows</key>
-	<false/>
+	<true/>
 	<key>DimInactiveSplitPanes</key>
 	<false/>
 	<key>DimOnlyText</key>
-	<false/>
+	<true/>
 	<key>DisableFullscreenTransparency</key>
 	<false/>
 	<key>EnableDivisionView</key>
@@ -35543,18 +35543,26 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 343 606 456 0 0 1920 1178 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>735 202 918 512 0 0 1920 1178 </string>
+	<string>735 252 796 473 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>510 442 650 458 0 0 1920 1178 </string>
+	<string>613 360 650 458 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1065 237 650 458 0 0 1920 1178 </string>
+	<string>537 101 650 458 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>4 17 1866 1161 0 0 2560 1418 </string>
+	<string>188 458 650 458 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 3</key>
+	<string>373 720 650 458 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 4</key>
+	<string>394 711 650 458 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 5</key>
+	<string>414 677 650 458 0 0 1920 1178 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
 			<key>ASCII Anti Aliased</key>
 			<true/>
+			<key>ASCII Ligatures</key>
+			<false/>
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
@@ -35729,7 +35737,7 @@
 			<key>Blur</key>
 			<true/>
 			<key>Blur Radius</key>
-			<real>5.681645393371582</real>
+			<real>3.7900697969543149</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -35746,7 +35754,9 @@
 			<key>Columns</key>
 			<integer>80</integer>
 			<key>Command</key>
-			<string>whitetitle</string>
+			<string></string>
+			<key>Cursor Boost</key>
+			<real>0.0</real>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -35768,7 +35778,7 @@
 			<key>Cursor Type</key>
 			<integer>2</integer>
 			<key>Custom Command</key>
-			<string>Yes</string>
+			<string>No</string>
 			<key>Custom Directory</key>
 			<string>Yes</string>
 			<key>Default Bookmark</key>
@@ -36265,8 +36275,10 @@
 			<array/>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
+			<key>Thin Strokes</key>
+			<integer>4</integer>
 			<key>Transparency</key>
-			<real>0.027313701923076923</real>
+			<real>0.0</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -36277,7 +36289,11 @@
 			<true/>
 			<key>Use Canonical Parser</key>
 			<false/>
+			<key>Use Cursor Guide</key>
+			<false/>
 			<key>Use Italic Font</key>
+			<true/>
+			<key>Use Non-ASCII Font</key>
 			<true/>
 			<key>Vertical Spacing</key>
 			<real>0.99064350128173828</real>
@@ -39259,7 +39275,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.027313701923076923</real>
+			<real>0.0</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -39425,5 +39441,9 @@
 	<true/>
 	<key>iTerm Version</key>
 	<string>3.1.4.beta.1</string>
+	<key>kCPKSelectionViewPreferredModeKey</key>
+	<integer>0</integer>
+	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
+	<false/>
 </dict>
 </plist>
