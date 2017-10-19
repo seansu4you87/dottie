@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>albumName</key>
+	<string>Cut Your Teeth (Kygo Remix)</string>
+	<key>artistName</key>
+	<string>Kyla La Grange</string>
+	<key>coverURL</key>
+	<string>https://lastfm-img2.akamaized.net/i/u/300x300/d7ee82c2bdb347d7c7aa6e61ad6b52bc.png</string>
+	<key>currentPosition</key>
+	<string>80</string>
+	<key>isLoved</key>
+	<string>false</string>
+	<key>oldFilename</key>
+	<string>/Users/piotr/Dropbox/Ubersicht/Playbox.Widget/Playbox.widget/lib/cover345.jpg</string>
+	<key>songChanged</key>
+	<string>false</string>
+	<key>songDuration</key>
+	<string>399</string>
+	<key>songName</key>
+	<string>Cut Your Teeth - Kygo Remix</string>
+</dict>
+</plist>
