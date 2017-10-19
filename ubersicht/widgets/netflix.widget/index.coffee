@@ -4,6 +4,9 @@
 #
 # Here is original inspiration:
 # - https://www.reddit.com/r/Ubersicht/comments/70nmgi/resource_friendly_animated_wallpaper/
+#
+# Convert more gifs to mp4 here:
+# - https://ezgif.com/gif-to-mp4
 
 command: "",
 refreshFrequency: false,
