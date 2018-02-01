@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>albumName</key>
-	<string>Cut Your Teeth (Kygo Remix)</string>
+	<string>Winterbreak (Tiësto's Deep House Remix)</string>
 	<key>artistName</key>
-	<string>Kyla La Grange</string>
+	<string>MUNA</string>
 	<key>coverURL</key>
-	<string>https://lastfm-img2.akamaized.net/i/u/300x300/d7ee82c2bdb347d7c7aa6e61ad6b52bc.png</string>
+	<string>NA</string>
 	<key>currentPosition</key>
-	<string>80</string>
+	<string>229</string>
 	<key>isLoved</key>
 	<string>false</string>
 	<key>oldFilename</key>
@@ -17,8 +17,8 @@
 	<key>songChanged</key>
 	<string>false</string>
 	<key>songDuration</key>
-	<string>399</string>
+	<string>229</string>
 	<key>songName</key>
-	<string>Cut Your Teeth - Kygo Remix</string>
+	<string>Winterbreak - Tiësto's Deep House Remix</string>
 </dict>
 </plist>

@@ -35355,6 +35355,13 @@
 			<key>Text</key>
 			<string>4A08D834-097E-4235-AFA9-68DE6FEAF4B2</string>
 		</dict>
+		<key>0x6e-0x140000</key>
+		<dict>
+			<key>Action</key>
+			<integer>26</integer>
+			<key>Text</key>
+			<string>F58429F7-6554-4942-9F93-C24DA3357C3B</string>
+		</dict>
 		<key>0x74-0x100000</key>
 		<dict>
 			<key>Action</key>
@@ -35543,19 +35550,53 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 343 606 456 0 0 1920 1178 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>735 252 796 473 0 0 1920 1178 </string>
+	<string>735 274 958 451 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>613 360 650 458 0 0 1920 1178 </string>
+	<string>0 0 2556 1418 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>537 101 650 458 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 10</key>
+	<string>541 517 650 458 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 11</key>
+	<string>562 494 650 458 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 12</key>
+	<string>583 471 650 458 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 13</key>
+	<string>604 448 650 458 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 14</key>
+	<string>625 425 650 458 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 15</key>
+	<string>646 402 650 458 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 16</key>
+	<string>667 379 650 458 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 17</key>
+	<string>688 356 650 458 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 18</key>
+	<string>709 333 650 458 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 19</key>
+	<string>730 310 650 458 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>188 458 650 458 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 20</key>
+	<string>751 287 650 458 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 21</key>
+	<string>772 264 650 458 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 22</key>
+	<string>793 241 650 458 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>373 720 650 458 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
 	<string>394 711 650 458 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
 	<string>414 677 650 458 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 6</key>
+	<string>457 609 650 458 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 7</key>
+	<string>478 586 650 458 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 8</key>
+	<string>499 563 650 458 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 9</key>
+	<string>520 540 650 458 0 0 1920 1178 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -39382,7 +39423,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-12T08:16:55Z</date>
+	<date>2017-10-26T00:46:34Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
