@@ -94,6 +94,8 @@ function be {
 alias beer="be rake"
 alias bees="be rspec"
 
+alias http="ruby -run -e httpd . -p 8080"
+
 # Weather
 function weather {
   curl wttr.in/$1?1
@@ -201,3 +203,25 @@ function drive {
   source activate carnd-term1
   tmux rename-window drive
 }
+
+#################################################
+#                   Coinbase                    #
+#################################################
+function cb {
+  if [ "$1" = "" ]
+  then
+    # echo "cb"
+    cd ~/Development/cbhq
+  elif [ "$1" = "wal" ]
+  then
+    # echo "wallace"
+    cd ~/Development/cbhq/wallace
+  elif [ "$1" = "eth" ]
+  then
+    # echo "macbeth"
+    cd ~/Development/cbhq/macbeth
+  else
+    echo "Not defined yet"
+  fi
+}
+alias dc="docker-compose"
