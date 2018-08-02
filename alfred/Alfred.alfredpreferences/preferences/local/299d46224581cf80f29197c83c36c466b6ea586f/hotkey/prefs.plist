@@ -2,13 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>autohide</key>
-	<true/>
-	<key>font</key>
-	<string>System Light</string>
-	<key>showOnMouseScreen</key>
-	<true/>
-	<key>style</key>
-	<integer>0</integer>
+	<key>default</key>
+	<dict>
+		<key>key</key>
+		<integer>49</integer>
+		<key>mod</key>
+		<integer>3222274048</integer>
+		<key>string</key>
+		<string>Space</string>
+	</dict>
 </dict>
 </plist>

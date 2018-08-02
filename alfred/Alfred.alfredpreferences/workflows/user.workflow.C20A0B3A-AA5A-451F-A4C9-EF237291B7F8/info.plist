@@ -74,7 +74,18 @@
 			</dict>
 		</array>
 		<key>6057DEAA-EDB3-411B-BFE3-46D2791DC61A</key>
-		<array/>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B98A122D-997E-4AC3-B40F-306852F8E201</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>6B24F5F3-F041-43DA-AB23-092ED6DFC1EC</key>
 		<array/>
 		<key>70BF01C9-FB28-4C40-9165-C05C3EEC3EAF</key>
@@ -91,7 +102,18 @@
 			</dict>
 		</array>
 		<key>76A3DCF1-22E0-496A-A383-92D70ED4BCE1</key>
-		<array/>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A8497071-864C-4EFE-A495-8A297055F265</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>932641BC-943D-441A-8425-59A42F1DEB83</key>
 		<array>
 			<dict>
@@ -210,19 +232,17 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>paths</key>
-				<array>
-					<string>/Applications/Shift.app</string>
-				</array>
-				<key>toggle</key>
-				<true/>
+				<key>command</key>
+				<integer>1</integer>
+				<key>confirm</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
+			<string>alfred.workflow.action.systemcommand</string>
 			<key>uid</key>
-			<string>FDFF8A4B-AEEF-4527-96DD-C77C5F33C93E</string>
+			<string>A8497071-864C-4EFE-A495-8A297055F265</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -236,11 +256,11 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>0</integer>
+				<integer>50</integer>
 				<key>hotmod</key>
-				<integer>0</integer>
+				<integer>1572864</integer>
 				<key>hotstring</key>
-				<string></string>
+				<string>`</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -459,11 +479,11 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>35</integer>
+				<integer>17</integer>
 				<key>hotmod</key>
 				<integer>1310720</integer>
 				<key>hotstring</key>
-				<string>P</string>
+				<string>T</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -481,19 +501,16 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>paths</key>
-				<array>
-					<string>~/Applications/JetBrains Toolbox/PyCharm Professional.app</string>
-				</array>
-				<key>toggle</key>
-				<true/>
+				<key>largetypetext</key>
+				<string>{date}
+{time}</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
+			<string>alfred.workflow.output.largetype</string>
 			<key>uid</key>
-			<string>4DDC7737-87C6-42EE-9696-5B25C08E192B</string>
+			<string>B98A122D-997E-4AC3-B40F-306852F8E201</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -548,8 +565,7 @@
 			<dict>
 				<key>paths</key>
 				<array>
-					<string>~/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/163.11103.6/IntelliJ IDEA.app</string>
-					<string>~/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/171.4694.23/IntelliJ IDEA.app</string>
+					<string>/Applications/IntelliJ IDEA.app</string>
 				</array>
 				<key>toggle</key>
 				<true/>
@@ -936,13 +952,6 @@
 			<key>ypos</key>
 			<real>900</real>
 		</dict>
-		<key>4DDC7737-87C6-42EE-9696-5B25C08E192B</key>
-		<dict>
-			<key>xpos</key>
-			<integer>500</integer>
-			<key>ypos</key>
-			<integer>1020</integer>
-		</dict>
 		<key>4E89E98E-ADE4-41CD-97DD-8BA4EBE291BF</key>
 		<dict>
 			<key>xpos</key>
@@ -1020,6 +1029,13 @@
 			<key>ypos</key>
 			<real>660</real>
 		</dict>
+		<key>A8497071-864C-4EFE-A495-8A297055F265</key>
+		<dict>
+			<key>xpos</key>
+			<integer>500</integer>
+			<key>ypos</key>
+			<integer>300</integer>
+		</dict>
 		<key>B19A0BA1-1323-47BB-A74C-F4C2E92321F4</key>
 		<dict>
 			<key>xpos</key>
@@ -1040,6 +1056,13 @@
 			<integer>500</integer>
 			<key>ypos</key>
 			<integer>1860</integer>
+		</dict>
+		<key>B98A122D-997E-4AC3-B40F-306852F8E201</key>
+		<dict>
+			<key>xpos</key>
+			<integer>500</integer>
+			<key>ypos</key>
+			<integer>1020</integer>
 		</dict>
 		<key>D0D170CF-42DF-4377-8032-B69D1C04AE97</key>
 		<dict>
@@ -1089,13 +1112,6 @@
 			<integer>500</integer>
 			<key>ypos</key>
 			<real>60</real>
-		</dict>
-		<key>FDFF8A4B-AEEF-4527-96DD-C77C5F33C93E</key>
-		<dict>
-			<key>xpos</key>
-			<integer>500</integer>
-			<key>ypos</key>
-			<integer>300</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
