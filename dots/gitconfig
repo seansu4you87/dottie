@@ -7,7 +7,7 @@
 [diff]
 	renames = true
 [status]
-	showUntrackedFiles = all
+	showuntrackedfiles = normal
 [branch]
 	autosetupmerge = true
 [merge]

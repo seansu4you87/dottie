@@ -1,5 +1,8 @@
 # (SEAN) Status Bar for Squarebook I think?
-source "/usr/local/lib/python2.7/site-packages/powerline/bindings/tmux/powerline.conf"
+# source "/usr/local/lib/python2.7/site-packages/powerline/bindings/tmux/powerline.conf"
+
+# (SEAN) Status Bar for Airbook
+source "/usr/local/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/powerline/bindings/tmux/powerline.conf"
 
 # (SEAN) powerline for iMac
 run-shell "powerline-daemon -q"
