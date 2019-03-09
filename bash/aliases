@@ -123,6 +123,15 @@ function purptitle {
   echo -ne "\033]6;1;bg;blue;brightness;60\a"
 }
 
+# Bash Tips
+# https://github.com/jlevy/the-art-of-command-line
+function cheat {
+  curl cheat.sh/$1
+}
+
+function explain {
+  open "https://explainshell.com/"
+}
 
 #################################################
 #                 Postgres                      #
