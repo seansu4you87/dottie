@@ -1,0 +1,27 @@
+#!/usr/bin/env ruby
+
+# https://github.com/thisredone/rb
+# become a command line wizard with ruby
+
+File.join(Dir.home, ".rbrc").tap { |f| load f if File.exists?(f) }
+
+def execute(instance, code)
+  puts instance.instance_eval(&code)
+rescue Errno::EPIPE
+  exit
+end
+
+run_on_single_line = ARGV.delete("-l")
+
+# Code given as the input will be called assuming the string/enumerator
+# is implicitly self (i.e. method calls)
+code = eval("Proc.new { #{ARGV.join(' ')} }")
+
+if run_on_single_line
+  STDIN.each do |line|
+    execute(line.chomp, code)
+  end
+else
+  execute(STDIN.each_line, code)
+end
+
