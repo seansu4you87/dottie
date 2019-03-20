@@ -7,5 +7,7 @@ Bundle 'elixir-lang/vim-elixir'
 " highlighting
 " Bundle 'mustache/vim-mustache-handlebars'
 
+" Colors
 Bundle 'morhetz/gruvbox'
+Bundle 'arcticicestudio/nord-vim'
 
