@@ -1,5 +1,6 @@
 set hlsearch
-color solarized
+" color solarized
+color gruvbox
 
 " remap escape to double j
 inoremap jj <ESC>

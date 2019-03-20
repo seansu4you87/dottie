@@ -234,3 +234,33 @@ function cb {
   fi
 }
 alias dc="docker-compose"
+
+#################################################
+#                    Airbnb                     #
+#################################################
+function air {
+  if [ "$1" = "" ]
+  then
+    # echo "airlab"
+    cd ~/airlab/repos
+  elif [ "$1" = "repipe" ]
+  then
+    # echo "repipe"
+    cd ~/airlab/repos/repipe
+  elif [ "$1" = "tree" ]
+  then
+    # echo "treehouse"
+    cd ~/airlab/repos/treehouse
+  elif [ "$1" = "meta" ]
+  then
+    # echo "metastation"
+    cd ~/airlab/repos/treehouse/projects/chinainfra/metastation
+  elif [ "$1" = "jlint" ]
+  then
+    ./gradlew :projects:chinainfra:metastation:spotlessApply
+  else
+    echo "Not defined yet"
+  fi
+}
+
+alias alacritty="vim /Users/sean_yu/.config/alacritty/alacritty.yml"

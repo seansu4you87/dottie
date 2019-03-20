@@ -1,0 +1,6 @@
+class String
+  def me
+    self
+  end
+end
+

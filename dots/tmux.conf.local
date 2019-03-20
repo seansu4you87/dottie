@@ -8,6 +8,20 @@ source "/usr/local/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-p
 run-shell "powerline-daemon -q"
 # source ~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/tmux/powerline.conf
 
+# (SEAN) Last window
+bind-key p last-window
+
 # set-option -g status-bg default
 # set-option -g status-left ''
 # set-option -g status-right '%l:%M%p'
+
+# TPM
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+
+# Gruvbox Colors
+set -g @plugin 'egel/tmux-gruvbox'
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run -b '~/.tmux/plugins/tpm/tpm'
+

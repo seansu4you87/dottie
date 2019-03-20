@@ -6,3 +6,6 @@ Bundle 'elixir-lang/vim-elixir'
 " Commented out cause Ember handlebars still give fucked up syntax
 " highlighting
 " Bundle 'mustache/vim-mustache-handlebars'
+
+Bundle 'morhetz/gruvbox'
+
