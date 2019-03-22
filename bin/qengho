@@ -1,0 +1,47 @@
+#!/bin/bash
+#
+# Helps explore a repo
+#
+# So high, so low, so many things to know.
+#
+# There is a deepness in the sky, and it extends forever.
+
+function main {
+  echo "So high, so low, so many things to know"
+  echo ""
+
+  ls -la | drop3 | filename | only_folders | loc | sort -r
+
+  echo ""
+}
+
+function drop3 {
+  rb drop 3 < /dev/stdin
+}
+
+function filename {
+  rb -l ' split(" ")[-1] ' < /dev/stdin
+}
+
+function only_folders {
+  rb ' select { |l| !l.include?(".") } ' < /dev/stdin
+}
+
+function loc {
+  # NOTE(yu): heredoc label needs to be quoted to escape the backticks
+  code=$(cat <<"ruby"
+
+loc = `tokei #{me}`.split("\n")
+  .select { |o| o.include?("Rust") }
+  .map { |o| o.split(" ")[2] }
+loc = loc.first || ""
+
+"#{loc.rjust(20)} - #{me.ljust(20)}"
+
+ruby
+  )
+  rb -l "$code" < /dev/stdin
+}
+
+main
+
