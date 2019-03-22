@@ -27,6 +27,7 @@ function only_folders {
   rb ' select { |l| !l.include?(".") } ' < /dev/stdin
 }
 
+# TODO(yu): Make the "Rust" query a configurable parameter
 function loc {
   # NOTE(yu): heredoc label needs to be quoted to escape the backticks
   code=$(cat <<"ruby"
