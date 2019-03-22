@@ -10,7 +10,7 @@ function main {
   echo "So high, so low, so many things to know"
   echo ""
 
-  ls -la | drop3 | filename | only_folders | loc | sort -r
+  ls -la | drop3 | filename | only_folders_and_rust | loc | sort -r
 
   echo ""
 }
@@ -23,8 +23,8 @@ function filename {
   rb -l ' split(" ")[-1] ' < /dev/stdin
 }
 
-function only_folders {
-  rb ' select { |l| !l.include?(".") } ' < /dev/stdin
+function only_folders_and_rust {
+  rb ' select { |l| !l.include?(".") || l.include?(".rs") } ' < /dev/stdin
 }
 
 # TODO(yu): Make the "Rust" query a configurable parameter
