@@ -6,11 +6,67 @@
 #
 # There is a deepness in the sky, and it extends forever.
 
-default_file_extension=".rs"
-default_pl="Rust"
 
-file_extension=${1:-$default_file_extension}
-pl=${2:-$default_pl}
+if [ "$1" = "" ] 
+then
+  file_extension=".rs"
+  pl="Rust"
+elif [ "$1" = "rust" ]
+then
+  file_extension=".rs"
+  pl="Rust"
+elif [ "$1" = "java" ]
+then
+  file_extension=".java"
+  pl="Java"
+elif  [ "$1" = "go" ]
+then
+  file_extension=".go"
+  pl="Go"
+elif  [ "$1" = "ruby" ]
+then
+  file_extension=".rb"
+  pl="Ruby"
+elif  [ "$1" = "python" ]
+then
+  file_extension=".py"
+  pl="Python"
+elif  [ "$1" = "swift" ]
+then
+  file_extension=".swift"
+  pl="Swift"
+elif  [ "$1" = "objc" ]
+then
+  file_extension=".m"
+  pl="Objective C"
+elif  [ "$1" = "js" ]
+then
+  file_extension=".js"
+  pl="JavaScript"
+elif  [ "$1" = "elixir" ]
+then
+  file_extension=".ex"
+  pl="Elixir"
+elif  [ "$1" = "bash" ]
+then
+  file_extension=".sh"
+  pl="Shell"
+elif  [ "$1" = "kotlin" ]
+then
+  file_extension=".kt"
+  pl="Kotlin"
+elif  [ "$1" = "c" ]
+then
+  file_extension=".c"
+  pl="C"
+elif  [ "$1" = "markdown" ]
+then
+  file_extension=".md"
+  pl="Markdown"
+else
+  echo "wtf is $1!?"
+  exit 1
+fi
 
 function main {
   echo "So high, so low, so many things to know"
