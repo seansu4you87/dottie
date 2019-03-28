@@ -16,6 +16,7 @@ alias empties="find . -empty -type d -maxdepth 2"
 tableflip() {
   echo "（╯°□°）╯ ┻━┻";
 }
+alias flip="tableflip"
 
 shrug() {
   echo "¯\_(ツ)_/¯";
@@ -36,6 +37,8 @@ function aliases {
   # $EDITOR ~/.aliases && source ~/.aliases
   $EDITOR $DOTTIE_HOME/bash/aliases && source ~/.bash_profile
 }
+
+alias renew='source ~/.bash_profile'
 
 alias ducks='du -cksh * | sort -rn|head -11' # Lists folders and files sizes in the current folder
 alias f='find . -iname'
@@ -257,10 +260,29 @@ function air {
     cd ~/airlab/repos/treehouse/projects/chinainfra/metastation
   elif [ "$1" = "jlint" ]
   then
-    ./gradlew :projects:chinainfra:metastation:spotlessApply
+    ./gradlew spotlessApply
+  elif [ "$1" = "tsa" ]
+  then
+    air jlint
+  elif [ "$1" = "idl" ]
+  then
+    ./gradlew buildServiceIDL
+  elif [ "$1" = "jc" ]
+  then
+    ./gradlew compileJava
+  elif [ "$1" = "sparse" ]
+  then
+    find $2 -iname "build.gradle" | rb -l 'slice(2, length - 14)' | sort
+  elif [ "$1" = "logs" ]
+  then
+    ENV=staging k logs
+  elif [ "$1" = "tail" ]
+  then
+    ENV=staging k tail
   else
     echo "Not defined yet"
   fi
 }
 
 alias alacritty="vim /Users/sean_yu/.config/alacritty/alacritty.yml"
+

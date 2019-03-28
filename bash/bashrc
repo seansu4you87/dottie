@@ -26,7 +26,7 @@ export COLOR_LIGHT_BLUE='\e[1;34m'
 export COLOR_GREEN='\e[0;32m'
 export COLOR_LIGHT_GREEN='\e[1;32m'
 export COLOR_CYAN='\e[0;36m'
-# export COLOR_LIGHT_CYAN='\e[1;36m' # doesn't work on solarized
+export COLOR_LIGHT_CYAN='\e[1;36m' # doesn't work on solarized
 export COLOR_RED='\e[0;31m'
 export COLOR_LIGHT_RED='\e[1;31m'
 export COLOR_PURPLE='\e[0;35m'
@@ -55,6 +55,7 @@ shopt -s checkwinsize
 
 # Terminal Prompt
 export PS1="\[${COLOR_PURPLE}\]\$(python $DOTTIE_HOME/bash/pwd.py)\[${COLOR_NC}\]\[${COLOR_CYAN}\]\$(__git_ps1 \" %s\") \[${COLOR_YELLOW}\]> \[${COLOR_NC}\] "
+
 export PS2='> '
 export PS3='#? '
 export PS4='+ '
