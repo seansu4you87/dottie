@@ -6,8 +6,17 @@
 #
 # There is a deepness in the sky, and it extends forever.
 
+default_file_extension=".rs"
+default_pl="Rust"
+
+file_extension=${1:-$default_file_extension}
+pl=${2:-$default_pl}
+
 function main {
   echo "So high, so low, so many things to know"
+  echo ""
+  echo "File: $file_extension"
+  echo "Code: $pl"
   echo ""
 
   ls -la | drop3 | filename | only_folders_and_rust | loc | sort -r
@@ -24,24 +33,26 @@ function filename {
 }
 
 function only_folders_and_rust {
-  rb ' select { |l| !l.include?(".") || l.include?(".rs") } ' < /dev/stdin
+  rb "select { |l| !l.include?('.') || l.include?('$file_extension') }" < /dev/stdin
 }
 
-# TODO(yu): Make the "Rust" query a configurable parameter
 function loc {
-  # NOTE(yu): heredoc label needs to be quoted to escape the backticks
-  code=$(cat <<"ruby"
-
-loc = `tokei #{me}`.split("\n")
-  .select { |o| o.include?("Rust") }
+  code=$(cat <<ruby
+loc = \`tokei #{me}\`.split("\n")
+  .select { |o| o.include?("$pl") }
   .map { |o| o.split(" ")[2] }
 loc = loc.first || ""
 
 "#{loc.rjust(20)} - #{me.ljust(20)}"
-
 ruby
   )
+
   rb -l "$code" < /dev/stdin
+}
+
+# Most Modified Files
+function mmf {
+ git log --pretty=format: --name-only | sort | uniq -c | sort -rg | head -10
 }
 
 main
