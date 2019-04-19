@@ -1,11 +1,15 @@
 set hlsearch
+
+set bg=dark
+" Colors
 " color solarized
-color gruvbox
 " color nord
+color gruvbox
 
 " remap escape to double j
 inoremap jj <ESC>
 
+" Airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 " let g:airline_left_sep = '▶'
@@ -18,12 +22,28 @@ nunmap <leader>t
 " Some Linux distributions set filetype in /etc/vimrc.
 " Clear filetype flags before changing runtimepath to force Vim to reload them.
 "
-filetype off
-filetype plugin indent off
-set runtimepath+=/usr/local/go/misc/vim
-filetype plugin indent on
-syntax on
-au BufNewFile,BufRead *.go setlocal noet ts=4 sw=4 sts=4
+" filetype off
+" filetype plugin indent off
+" set runtimepath+=/usr/local/go/misc/vim
+" filetype plugin indent on
+" syntax on
+" au BufNewFile,BufRead *.go setlocal noet ts=4 sw=4 sts=4
 "
 " Autorun go fmt
 " autocmd FileType go autocmd BufWritePre <buffer> Fmt
+
+" Relative Line Numbers with Toggling
+" https://jeffkreeftmeijer.com/vim-number/
+:set number relativenumber
+:augroup numbertoggle
+:  autocmd!
+:  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+:  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+:augroup END
+
+" Rust
+au FileType rust nmap gd <Plug>(rust-def)
+au FileType rust nmap gs <Plug>(rust-def-split)
+au FileType rust nmap gv <Plug>(rust-def-vertical)
+au FileType rust nmap <leader>gd <Plug>(rust-doc)
+

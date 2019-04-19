@@ -146,7 +146,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>F51AFF16-38A4-4E7D-ABC7-7F31B762FE32</string>
+				<string>DA89DC3E-66CC-473B-AA45-44E6B25A9671</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -226,6 +226,23 @@
 			<string>alfred.workflow.action.launchfiles</string>
 			<key>uid</key>
 			<string>F51AFF16-38A4-4E7D-ABC7-7F31B762FE32</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/Alacritty.app</string>
+				</array>
+				<key>toggle</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>DA89DC3E-66CC-473B-AA45-44E6B25A9671</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -563,23 +580,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>paths</key>
-				<array>
-					<string>/Applications/IntelliJ IDEA.app</string>
-				</array>
-				<key>toggle</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
-			<key>uid</key>
-			<string>E7192168-124A-4ACA-911D-31CCF9FE503C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -607,6 +607,23 @@
 			<string>70BF01C9-FB28-4C40-9165-C05C3EEC3EAF</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/IntelliJ IDEA.app</string>
+				</array>
+				<key>toggle</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>E7192168-124A-4ACA-911D-31CCF9FE503C</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1070,6 +1087,13 @@
 			<integer>100</integer>
 			<key>ypos</key>
 			<real>60</real>
+		</dict>
+		<key>DA89DC3E-66CC-473B-AA45-44E6B25A9671</key>
+		<dict>
+			<key>xpos</key>
+			<integer>500</integer>
+			<key>ypos</key>
+			<integer>180</integer>
 		</dict>
 		<key>DCB64C71-6035-461D-9033-E69BF759D4AE</key>
 		<dict>

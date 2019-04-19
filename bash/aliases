@@ -286,3 +286,4 @@ function air {
 
 alias alacritty="vim /Users/sean_yu/.config/alacritty/alacritty.yml"
 
+alias exportty="export GPG_TTY=$(tty)"
