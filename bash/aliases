@@ -286,4 +286,17 @@ function air {
 
 alias alacritty="vim /Users/sean_yu/.config/alacritty/alacritty.yml"
 
+# WTF?
 alias exportty="export GPG_TTY=$(tty)"
+
+# Prune docker images
+alias dp="docker system prune -a -f"
+
+function port() {
+  # NOTE(yu): This searches for the port directly
+  # `+c 0` means full command name is displayed
+  lsof +c 0 -i :$1
+
+  # NOTE(yu): this does a search match search
+  # lsof +c 0 -i 6 | rb "each_with_index.select { |r, i| i == 0 || r.include?('$1') }.map { |r, i| r }"
+}

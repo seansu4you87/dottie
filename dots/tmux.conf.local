@@ -28,12 +28,22 @@ set -g @plugin 'egel/tmux-gruvbox'
 # Nord Colors
 # set -g @plugin 'arcticicestudio/nord-tmux'
 
-
-
-
-
-
-
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run -b '~/.tmux/plugins/tpm/tpm'
+
+# NOTE(yu):
+# prefix + I to fetch plugins and reload
+# prefix + z to zoom and unzoom (it's boss!)
+
+##################################################
+# Tmux Resurrect                                 #
+# https://github.com/tmux-plugins/tmux-resurrect #
+##################################################
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @resurrect-save-shell-history 'on'
+# NOTE(yu): this command requires `tmux show -g default-command` to not contain
+# any || or &&. check here for details:
+# https://github.com/tmux-plugins/tmux-resurrect/blob/master/docs/restoring_pane_contents.md
+#
+# set -g @resurrect-capture-pane-contents 'on'
 
