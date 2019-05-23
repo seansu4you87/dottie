@@ -39,6 +39,10 @@ run -b '~/.tmux/plugins/tpm/tpm'
 # Tmux Resurrect                                 #
 # https://github.com/tmux-plugins/tmux-resurrect #
 ##################################################
+#
+# prefix + Ctrl-s - save
+# prefix + Ctrl-r - restore
+#
 set -g @plugin 'tmux-plugins/tmux-resurrect'
 set -g @resurrect-save-shell-history 'on'
 # NOTE(yu): this command requires `tmux show -g default-command` to not contain
@@ -46,4 +50,17 @@ set -g @resurrect-save-shell-history 'on'
 # https://github.com/tmux-plugins/tmux-resurrect/blob/master/docs/restoring_pane_contents.md
 #
 # set -g @resurrect-capture-pane-contents 'on'
+
+##################
+# PULLOUT WINDOW #
+##################
+bind-key P move-window \; move-window -r
+
+###############
+# RESIZE PANE #
+###############
+bind-key J resize-pane -D 5
+bind-key K resize-pane -U 5
+bind-key H resize-pane -L 5
+bind-key L resize-pane -R 5
 
