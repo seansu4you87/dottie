@@ -74,7 +74,7 @@ alias gfd='git push -f origin head:canary'
 alias git-user="$EDITOR ~/.gitconfig"
 alias gl="git log --date=local"
 alias gls="git shortlog -sn"
-alias glop="git log --pretty=format:'%C(yellow)%ad %Creset| %Cgreen%h %Creset| %Cblue%an %Creset| %Cgreen%d %Creset%s' --date=short"
+alias glop="git log --pretty=format:'%C(yellow)%ad %Creset| %Cgreen%h %Creset| %Cblue%<(10,trunc)%an %Creset| %Cgreen%d %Creset%s' --date=short"
 alias gmm="git merge master"
 alias gps="git pull && git submodule sync && git submodule update --init --recursive"
 alias grc="git rebase --continue"
