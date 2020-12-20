@@ -3,8 +3,8 @@ set hlsearch
 set bg=dark
 " Colors
 " color solarized
-" color nord
-color gruvbox
+color nord
+" color gruvbox
 
 " remap escape to double j
 inoremap jj <ESC>
@@ -51,6 +51,6 @@ au FileType rust nmap <leader>gd <Plug>(rust-doc)
 " source: https://lornajane.net/posts/2018/vim-settings-for-working-with-yaml
 " zc to close fold
 " zo to open fold
-au! BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml foldmethod=indent
-autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+" au! BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml foldmethod=indent
+" autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 

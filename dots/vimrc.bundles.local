@@ -17,3 +17,4 @@ Bundle 'cespare/vim-toml'
 Bundle 'wting/rust.vim'
 Bundle 'racer-rust/vim-racer'
 
+Plugin 'towolf/vim-helm'

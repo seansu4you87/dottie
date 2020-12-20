@@ -256,6 +256,10 @@ function air {
   then
     # echo "treehouse"
     cd ~/airlab/repos/treehouse
+  elif [ "$1" = "repos" ]
+  then
+    # echo "repos"
+    cd ~/airlab/repos
   elif [ "$1" = "meta" ]
   then
     # echo "metastation"
@@ -288,6 +292,8 @@ function air {
 
 alias alacritty="vim /Users/sean_yu/.config/alacritty/alacritty.yml"
 
+alias kc="kubectl"
+
 # WTF?
 alias exportty="export GPG_TTY=$(tty)"
 
@@ -302,3 +308,8 @@ function port() {
   # NOTE(yu): this does a search match search
   # lsof +c 0 -i 6 | rb "each_with_index.select { |r, i| i == 0 || r.include?('$1') }.map { |r, i| r }"
 }
+
+gwr () {
+        $(git rev-parse --show-toplevel)/gradlew $@
+}
+

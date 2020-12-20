@@ -1,6 +1,7 @@
 [user]
 	name = Sean Yu
 	email = seansu4you87@gmail.com
+	signingkey = E2E4FA17671F14D0
 [push]
 	config = default
 	default = current
@@ -23,7 +24,9 @@
 	interactive = auto
 [core]
 	excludesfile = ~/.gitignore
-	editor = /Users/sean/bin/vim
+	editor = /Users/sean_yu/bin/vim
+	precomposeunicode = true
+	sparseCheckout = true
 [alias]
 	a = add
 	add-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; git add `f`"
@@ -60,7 +63,7 @@
 	whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
         who = shortlog -sn
 [rerere]
-	enabled = 1
+	enabled = true
 [include]
 	path = ~/.gitconfig_local
 [http]
@@ -69,3 +72,5 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	required = true
+[gpg]
+	program = gpg
