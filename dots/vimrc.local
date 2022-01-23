@@ -2,8 +2,13 @@ set hlsearch
 
 set bg=dark
 " Colors
-" color solarized
-color nord
+
+color solarized
+" NOTE(yu): for solarized, this will intelligently switch between light and
+" dark.  However this is broken.  If you can fix it then it'll work!
+" let hour = strftime("%H") if 6 <= hour && hour < 18 set background=light else set background=dark endif colorscheme solarized
+
+" color nord
 " color gruvbox
 
 " remap escape to double j
@@ -12,6 +17,8 @@ inoremap jj <ESC>
 " Airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+let g:airline_theme='solarized'
+let g:airline_solarized_bg='dark'
 " let g:airline_left_sep = '▶'
 " let g:airline_right_sep = '◀'
 

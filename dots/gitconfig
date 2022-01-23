@@ -26,7 +26,6 @@
 	excludesfile = ~/.gitignore
 	editor = /Users/sean_yu/bin/vim
 	precomposeunicode = true
-	sparseCheckout = true
 [alias]
 	a = add
 	add-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; git add `f`"

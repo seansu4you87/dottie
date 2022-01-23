@@ -13,6 +13,10 @@ alias ls="ls -G"
 alias ll="ls -Gal"
 alias empties="find . -empty -type d -maxdepth 2"
 
+now() {
+  date +"%T"
+}
+
 tableflip() {
   echo "（╯°□°）╯ ┻━┻";
 }
@@ -252,10 +256,26 @@ function air {
   then
     # echo "repipe"
     cd ~/airlab/repos/repipe
+  elif [ "$1" = "sysops" ]
+  then
+    # echo "sysops"
+    cd ~/airlab/repos/sysops
+  elif [ "$1" = "prods" ]
+  then
+    # echo "vitess-prods"
+    cd ~/airlab/repos/vitess-prods
+  elif [ "$1" = "boom" ]
+  then
+    # echo "boom"
+    cd ~/airlab/repos/boom2
   elif [ "$1" = "tree" ]
   then
     # echo "treehouse"
     cd ~/airlab/repos/treehouse
+  elif [ "$1" = "orc" ]
+  then
+    # echo "orchestrator"
+    cd ~/airlab/repos/orchestrator
   elif [ "$1" = "repos" ]
   then
     # echo "repos"
@@ -290,9 +310,16 @@ function air {
   fi
 }
 
+# Gradlew wrapper for Treehouse
+gwr () {
+        $(git rev-parse --show-toplevel)/gradlew $@
+}
+
 alias alacritty="vim /Users/sean_yu/.config/alacritty/alacritty.yml"
 
 alias kc="kubectl"
+alias kx="kubectx"
+alias kn="kubens"
 
 # WTF?
 alias exportty="export GPG_TTY=$(tty)"
@@ -309,6 +336,7 @@ function port() {
   # lsof +c 0 -i 6 | rb "each_with_index.select { |r, i| i == 0 || r.include?('$1') }.map { |r, i| r }"
 }
 
+# Gradlew wrapper
 gwr () {
         $(git rev-parse --show-toplevel)/gradlew $@
 }

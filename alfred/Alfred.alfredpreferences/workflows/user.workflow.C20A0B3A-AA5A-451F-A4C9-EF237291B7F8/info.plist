@@ -20,18 +20,7 @@
 			</dict>
 		</array>
 		<key>1B56278D-1CB8-4BDB-B9C8-1DE7C8253F31</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>A56CBD53-9A53-44CC-AE6F-39BA7B529F3D</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
+		<array/>
 		<key>1E440D53-8CD6-40A7-8DEA-45C5F7913F22</key>
 		<array/>
 		<key>3D54671F-F4E9-4D7F-BBFA-522428B43532</key>
@@ -50,18 +39,7 @@
 			</dict>
 		</array>
 		<key>4E89E98E-ADE4-41CD-97DD-8BA4EBE291BF</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>DCB64C71-6035-461D-9033-E69BF759D4AE</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
+		<array/>
 		<key>5231B202-C7FE-4F35-8BCA-85E11E7C12C1</key>
 		<array>
 			<dict>
@@ -79,7 +57,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>EFCAE3A9-3044-470C-9F62-C6E304B40A04</string>
+				<string>63F60817-7CA0-48CD-98A4-0436A1930D47</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -107,7 +85,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>E7192168-124A-4ACA-911D-31CCF9FE503C</string>
+				<string>5567A492-2A4C-486B-81D6-896AE27A0D8F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -133,7 +111,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>5CCEF8D2-B1E9-4F24-A081-2C4BFACDD20C</string>
+				<string>725ABC39-D449-4BAB-A9CA-95E1B5F3DDC5</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -156,7 +134,18 @@
 			</dict>
 		</array>
 		<key>B19A0BA1-1323-47BB-A74C-F4C2E92321F4</key>
-		<array/>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D49735EE-6004-4F8E-8AE6-F2B5AE4808D2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>D0D170CF-42DF-4377-8032-B69D1C04AE97</key>
 		<array>
 			<dict>
@@ -183,6 +172,8 @@
 				<false/>
 			</dict>
 		</array>
+		<key>E0F633D7-F1DE-4F94-BFBC-65846312ACDB</key>
+		<array/>
 		<key>E9CBCDD1-FC69-45D8-95A5-566C85FBFEEA</key>
 		<array>
 			<dict>
@@ -244,7 +235,7 @@
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>relatedAppsMode</key>
 				<integer>0</integer>
 			</dict>
@@ -307,7 +298,7 @@
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>relatedAppsMode</key>
 				<integer>0</integer>
 			</dict>
@@ -323,7 +314,7 @@
 			<dict>
 				<key>paths</key>
 				<array>
-					<string>/Applications/Utilities/Activity Monitor.app</string>
+					<string>/System/Applications/Utilities/Activity Monitor.app</string>
 				</array>
 				<key>toggle</key>
 				<true/>
@@ -355,7 +346,7 @@
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>relatedAppsMode</key>
 				<integer>0</integer>
 			</dict>
@@ -386,7 +377,7 @@
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>relatedAppsMode</key>
 				<integer>0</integer>
 			</dict>
@@ -443,15 +434,15 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>13</integer>
+				<integer>45</integer>
 				<key>hotmod</key>
 				<integer>1310720</integer>
 				<key>hotstring</key>
-				<string>W</string>
+				<string>N</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>relatedAppsMode</key>
 				<integer>0</integer>
 			</dict>
@@ -516,7 +507,7 @@
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>relatedAppsMode</key>
 				<integer>0</integer>
 			</dict>
@@ -547,6 +538,8 @@
 {time}</string>
 				<key>textcolor</key>
 				<string></string>
+				<key>wrapat</key>
+				<integer>50</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.largetype</string>
@@ -606,7 +599,7 @@
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>relatedAppsMode</key>
 				<integer>0</integer>
 			</dict>
@@ -637,6 +630,23 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>paths</key>
+				<array>
+					<string>~/Applications/Brave Browser Apps.localized/Habitica.app</string>
+				</array>
+				<key>toggle</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>5C8FDF13-17B7-4E91-88AD-306CCF52FC0C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -654,7 +664,7 @@
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>relatedAppsMode</key>
 				<integer>0</integer>
 			</dict>
@@ -702,7 +712,7 @@
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>relatedAppsMode</key>
 				<integer>0</integer>
 			</dict>
@@ -718,7 +728,7 @@
 			<dict>
 				<key>paths</key>
 				<array>
-					<string>/Applications/RubyMine.app</string>
+					<string>/Applications/IntelliJ IDEA.app</string>
 				</array>
 				<key>toggle</key>
 				<true/>
@@ -750,7 +760,7 @@
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>relatedAppsMode</key>
 				<integer>0</integer>
 			</dict>
@@ -783,7 +793,7 @@
 			<dict>
 				<key>paths</key>
 				<array>
-					<string>/Applications/Roam.app</string>
+					<string>~/Applications/Brave Browser Apps.localized/Roam Research.app</string>
 				</array>
 				<key>toggle</key>
 				<true/>
@@ -794,6 +804,85 @@
 			<string>5CCEF8D2-B1E9-4F24-A081-2C4BFACDD20C</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>14</integer>
+				<key>hotmod</key>
+				<integer>1310720</integer>
+				<key>hotstring</key>
+				<string>E</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>932641BC-943D-441A-8425-59A42F1DEB83</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/Craft.app</string>
+				</array>
+				<key>toggle</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>725ABC39-D449-4BAB-A9CA-95E1B5F3DDC5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>E0F633D7-F1DE-4F94-BFBC-65846312ACDB</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -824,37 +913,6 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>14</integer>
-				<key>hotmod</key>
-				<integer>1310720</integer>
-				<key>hotstring</key>
-				<string>E</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>932641BC-943D-441A-8425-59A42F1DEB83</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
 				<integer>7</integer>
 				<key>hotmod</key>
 				<integer>1310720</integer>
@@ -863,7 +921,7 @@
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>relatedAppsMode</key>
 				<integer>0</integer>
 			</dict>
@@ -928,7 +986,7 @@
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>relatedAppsMode</key>
 				<integer>0</integer>
 			</dict>
@@ -976,7 +1034,7 @@
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>relatedAppsMode</key>
 				<integer>0</integer>
 			</dict>
@@ -1021,6 +1079,23 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>paths</key>
+				<array>
+					<string>~/Applications/Brave Browser Apps.localized/Gmail.app</string>
+				</array>
+				<key>toggle</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>D49735EE-6004-4F8E-8AE6-F2B5AE4808D2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -1054,7 +1129,7 @@
 			<dict>
 				<key>paths</key>
 				<array>
-					<string>/Applications/Things3.app</string>
+					<string>/Applications/Discord.app</string>
 				</array>
 				<key>toggle</key>
 				<true/>
@@ -1078,15 +1153,15 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>48</integer>
+				<integer>3</integer>
 				<key>hotmod</key>
 				<integer>1310720</integer>
 				<key>hotstring</key>
-				<string>⇥</string>
+				<string>F</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>relatedAppsMode</key>
 				<integer>0</integer>
 			</dict>
@@ -1128,7 +1203,7 @@
 			<key>xpos</key>
 			<integer>100</integer>
 			<key>ypos</key>
-			<integer>2105</integer>
+			<integer>2100</integer>
 		</dict>
 		<key>1E440D53-8CD6-40A7-8DEA-45C5F7913F22</key>
 		<dict>
@@ -1186,6 +1261,13 @@
 			<key>ypos</key>
 			<real>540</real>
 		</dict>
+		<key>5C8FDF13-17B7-4E91-88AD-306CCF52FC0C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>505</integer>
+			<key>ypos</key>
+			<integer>1260</integer>
+		</dict>
 		<key>5CCEF8D2-B1E9-4F24-A081-2C4BFACDD20C</key>
 		<dict>
 			<key>xpos</key>
@@ -1221,6 +1303,13 @@
 			<key>ypos</key>
 			<real>1500</real>
 		</dict>
+		<key>725ABC39-D449-4BAB-A9CA-95E1B5F3DDC5</key>
+		<dict>
+			<key>xpos</key>
+			<integer>350</integer>
+			<key>ypos</key>
+			<integer>1760</integer>
+		</dict>
 		<key>76A3DCF1-22E0-496A-A383-92D70ED4BCE1</key>
 		<dict>
 			<key>xpos</key>
@@ -1240,7 +1329,7 @@
 			<key>xpos</key>
 			<integer>100</integer>
 			<key>ypos</key>
-			<real>1860</real>
+			<integer>1740</integer>
 		</dict>
 		<key>97754CCE-3FB3-42AA-86BC-3AA03FFA435D</key>
 		<dict>
@@ -1312,6 +1401,13 @@
 			<key>ypos</key>
 			<real>60</real>
 		</dict>
+		<key>D49735EE-6004-4F8E-8AE6-F2B5AE4808D2</key>
+		<dict>
+			<key>xpos</key>
+			<integer>505</integer>
+			<key>ypos</key>
+			<integer>2460</integer>
+		</dict>
 		<key>DA89DC3E-66CC-473B-AA45-44E6B25A9671</key>
 		<dict>
 			<key>xpos</key>
@@ -1332,6 +1428,13 @@
 			<integer>100</integer>
 			<key>ypos</key>
 			<real>420</real>
+		</dict>
+		<key>E0F633D7-F1DE-4F94-BFBC-65846312ACDB</key>
+		<dict>
+			<key>xpos</key>
+			<integer>100</integer>
+			<key>ypos</key>
+			<integer>1860</integer>
 		</dict>
 		<key>E7192168-124A-4ACA-911D-31CCF9FE503C</key>
 		<dict>

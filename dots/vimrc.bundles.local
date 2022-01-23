@@ -1,4 +1,6 @@
 Bundle 'bling/vim-airline'
+Bundle 'vim-airline/vim-airline-themes'
+
 Bundle 'Blackrush/vim-gocode'
 Bundle 'elixir-lang/vim-elixir'
 
@@ -14,7 +16,7 @@ Bundle 'arcticicestudio/nord-vim'
 Bundle 'cespare/vim-toml'
 
 " Rust
-Bundle 'wting/rust.vim'
-Bundle 'racer-rust/vim-racer'
+Bundle 'rust-lang/rust.vim'
+" Deprecated...  Bundle 'racer-rust/vim-racer'
 
 Plugin 'towolf/vim-helm'
