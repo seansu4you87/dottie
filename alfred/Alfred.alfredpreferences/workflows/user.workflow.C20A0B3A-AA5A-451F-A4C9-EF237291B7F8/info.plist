@@ -150,7 +150,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>F51AFF16-38A4-4E7D-ABC7-7F31B762FE32</string>
+				<string>9356B8FD-5FCA-443D-97F7-311F51D32416</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -198,6 +198,23 @@
 	<string>Launch file group from hotkey</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/Warp.app</string>
+				</array>
+				<key>toggle</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>9356B8FD-5FCA-443D-97F7-311F51D32416</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -1330,6 +1347,13 @@
 			<integer>100</integer>
 			<key>ypos</key>
 			<integer>1740</integer>
+		</dict>
+		<key>9356B8FD-5FCA-443D-97F7-311F51D32416</key>
+		<dict>
+			<key>xpos</key>
+			<integer>300</integer>
+			<key>ypos</key>
+			<integer>10</integer>
 		</dict>
 		<key>97754CCE-3FB3-42AA-86BC-3AA03FFA435D</key>
 		<dict>
