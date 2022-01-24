@@ -24,7 +24,7 @@
 	interactive = auto
 [core]
 	excludesfile = ~/.gitignore
-	editor = /Users/sean_yu/bin/vim
+	editor = ~/bin/vim
 	precomposeunicode = true
 [alias]
 	a = add
