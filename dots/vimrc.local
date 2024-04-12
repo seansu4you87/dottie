@@ -3,7 +3,10 @@ set hlsearch
 set bg=dark
 " Colors
 
-color solarized
+" colorscheme base16-solarized-dark
+" colorscheme base16-default-dark
+" colorscheme solarized
+
 " NOTE(yu): for solarized, this will intelligently switch between light and
 " dark.  However this is broken.  If you can fix it then it'll work!
 " let hour = strftime("%H") if 6 <= hour && hour < 18 set background=light else set background=dark endif colorscheme solarized

@@ -3,7 +3,7 @@
 # https://github.com/thisredone/rb
 # become a command line wizard with ruby
 
-File.join(Dir.home, ".rbrc").tap { |f| load f if File.exists?(f) }
+File.join(Dir.home, ".rbrc").tap { |f| load f if File.exist?(f) }
 
 def execute(instance, code)
   puts instance.instance_eval(&code)

@@ -1,7 +1,7 @@
 [user]
 	name = Sean Yu
 	email = seansu4you87@gmail.com
-	signingkey = E2E4FA17671F14D0
+	signingkey = 30ACD92B8F9DA72F
 [push]
 	config = default
 	default = current
@@ -61,6 +61,7 @@
 	tree = log --graph --decorate --pretty=oneline --abbrev-commit
 	whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
         who = shortlog -sn
+	count-lines = "! git log --author=\"$1\" --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf \"added lines: %s, removed lines: %s, total lines: %s\\n\", add, subs, loc }' #"
 [rerere]
 	enabled = true
 [include]
@@ -73,3 +74,5 @@
 	required = true
 [gpg]
 	program = gpg
+[commit]
+	pgpsign = true

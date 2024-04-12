@@ -11,6 +11,7 @@ Bundle 'elixir-lang/vim-elixir'
 " Colors
 Bundle 'morhetz/gruvbox'
 Bundle 'arcticicestudio/nord-vim'
+Plugin 'chriskempson/base16-vim'
 
 " TOML
 Bundle 'cespare/vim-toml'
@@ -20,3 +21,4 @@ Bundle 'rust-lang/rust.vim'
 " Deprecated...  Bundle 'racer-rust/vim-racer'
 
 Plugin 'towolf/vim-helm'
+

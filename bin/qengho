@@ -43,6 +43,18 @@ elif  [ "$1" = "js" ]
 then
   file_extension=".js"
   pl="JavaScript"
+elif  [ "$1" = "ts" ]
+then
+  file_extension=".ts"
+  pl="TypeScript"
+elif  [ "$1" = "tsx" ]
+then
+  file_extension=".tsx"
+  pl="TypeScript JSX"
+elif  [ "$1" = "sol" ]
+then
+  file_extension=".sol"
+  pl="Solidity"
 elif  [ "$1" = "elixir" ]
 then
   file_extension=".ex"

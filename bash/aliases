@@ -2,6 +2,7 @@
 
 alias kupo="cd $KUPO_HOME"
 alias dots="cd $DOTTIE_HOME"
+alias mono="cd $GITHUB_HOME/../withbridge/monorail"
 
 # Convenient stuff
 alias ..="cd .."
@@ -12,6 +13,12 @@ alias l="ls -Gal"
 alias ls="ls -G"
 alias ll="ls -Gal"
 alias empties="find . -empty -type d -maxdepth 2"
+
+killaudio() {
+  sudo rm /Library/Preferences/Audio/com.apple.audio.DeviceSettings.plist
+  sudo rm /Library/Preferences/Audio/com.apple.audio.SystemSettings.plist
+  sudo killall coreaudiod
+}
 
 now() {
   date +"%T"
@@ -102,15 +109,24 @@ function be {
 
 alias beer="be rake"
 alias bees="be rspec"
+alias beet="be srb tc"
+alias beets="beet && bees"
+alias beetred="beet && be rspec --only-failures"
+alias becky="be rubocop"
+alias becka="be rubocop -A"
+alias berc="be rails c"
+
+alias ci="beets && becky"
 
 alias http="ruby -run -e httpd . -p 8080"
 
 # Weather
-function weather {
-  curl wttr.in/$1?1
-}
+# function weather {
+#   curl wttr.in/$1?1
+# }
 # alias weather2="curl -4 wttr.in/sanfrancisco"
 # alias moon="
+alias weather="curl wttr.in"
 
 # Unixporn
 
@@ -340,4 +356,12 @@ function port() {
 gwr () {
         $(git rev-parse --show-toplevel)/gradlew $@
 }
+
+alias yt="yarn test"
+
+# Bridge
+alias prod="ssh srv-cd30bven6mpqnrg5tt20@ssh.oregon.render.com"
+alias sand="ssh srv-cej77q1a6gdkdn4riarg@ssh.oregon.render.com"
+alias stay="ssh srv-cmt8hm0cmk4c738lmfh0@ssh.oregon.render.com"
+
 
