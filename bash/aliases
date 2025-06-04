@@ -363,5 +363,14 @@ alias yt="yarn test"
 alias prod="ssh srv-cd30bven6mpqnrg5tt20@ssh.oregon.render.com"
 alias sand="ssh srv-cej77q1a6gdkdn4riarg@ssh.oregon.render.com"
 alias stay="ssh srv-cmt8hm0cmk4c738lmfh0@ssh.oregon.render.com"
+alias au24="ssh srv-cue6199u0jms73crdrug@ssh.oregon.render.com"
+
+# stay () {
+#   ssh srv-cmt8hm0cmk4c738lmfh0@ssh.oregon.render.com -t 'CONSOLE_ADMIN_NAME=sean bin/rails c'
+# }
+
+# Github Compare
+alias ghc="gh pr view --web"
+
 
 

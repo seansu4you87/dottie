@@ -51,7 +51,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>5567A492-2A4C-486B-81D6-896AE27A0D8F</string>
+				<string>50532725-8E49-4D0D-99F2-672BF369CC93</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -92,7 +92,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>738BC5A1-A026-495B-8688-65846B27A9AE</string>
+				<string>63F60817-7CA0-48CD-98A4-0436A1930D47</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -319,6 +319,23 @@
 			<string>alfred.workflow.action.launchfiles</string>
 			<key>uid</key>
 			<string>F51AFF16-38A4-4E7D-ABC7-7F31B762FE32</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/Ghostty.app</string>
+				</array>
+				<key>toggle</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>DE543D77-2B18-4A3A-B9F9-22385EFFC9CF</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -642,6 +659,23 @@
 			<string>alfred.workflow.action.launchfiles</string>
 			<key>uid</key>
 			<string>1059AC0C-5040-4F48-9979-9E6BF34605F8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/Texts.app</string>
+				</array>
+				<key>toggle</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>29C9AE13-D99B-4905-906E-7103975B153A</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1016,6 +1050,23 @@
 			<dict>
 				<key>paths</key>
 				<array>
+					<string>/Applications/Cursor.app</string>
+				</array>
+				<key>toggle</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>50532725-8E49-4D0D-99F2-672BF369CC93</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
 					<string>/Applications/Visual Studio Code.app</string>
 				</array>
 				<key>toggle</key>
@@ -1341,7 +1392,7 @@
 			<dict>
 				<key>paths</key>
 				<array>
-					<string>/Applications/Todoist.app</string>
+					<string>/Applications/Tana.app</string>
 				</array>
 				<key>toggle</key>
 				<true/>
@@ -1575,6 +1626,13 @@
 			<key>ypos</key>
 			<integer>1675</integer>
 		</dict>
+		<key>29C9AE13-D99B-4905-906E-7103975B153A</key>
+		<dict>
+			<key>xpos</key>
+			<integer>680</integer>
+			<key>ypos</key>
+			<integer>900</integer>
+		</dict>
 		<key>31C2F948-7595-499D-8E1C-2B37F8B3E362</key>
 		<dict>
 			<key>xpos</key>
@@ -1602,6 +1660,13 @@
 			<integer>100</integer>
 			<key>ypos</key>
 			<real>2580</real>
+		</dict>
+		<key>50532725-8E49-4D0D-99F2-672BF369CC93</key>
+		<dict>
+			<key>xpos</key>
+			<integer>820</integer>
+			<key>ypos</key>
+			<integer>1620</integer>
 		</dict>
 		<key>512F6F43-CEBB-48FE-BCB7-0344D06AED0D</key>
 		<dict>
@@ -1830,9 +1895,9 @@
 		<key>CC42BF05-600A-45A3-A839-7AA5E26AA54C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>270</integer>
+			<integer>275</integer>
 			<key>ypos</key>
-			<integer>2280</integer>
+			<integer>2270</integer>
 		</dict>
 		<key>D0D170CF-42DF-4377-8032-B69D1C04AE97</key>
 		<dict>
@@ -1861,6 +1926,13 @@
 			<integer>500</integer>
 			<key>ypos</key>
 			<real>2580</real>
+		</dict>
+		<key>DE543D77-2B18-4A3A-B9F9-22385EFFC9CF</key>
+		<dict>
+			<key>xpos</key>
+			<integer>300</integer>
+			<key>ypos</key>
+			<integer>145</integer>
 		</dict>
 		<key>E0B9B141-C9E0-457C-9417-89CA847B667A</key>
 		<dict>
